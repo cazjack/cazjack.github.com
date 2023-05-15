@@ -1,12 +1,12 @@
 [submodule "bolt"]
-	path = bolt
+	path = lib/bolt
 	url = git@github.com:stephband/bolt-2
 [submodule "slide-show"]
-	path = slide-show
+	path = lib/slide-show
 	url = git@github.com:stephband/slide-show
 [submodule "fn"]
-	path = fn
+	path = lib/fn
 	url = git@github.com:stephband/fn
 [submodule "dom"]
-	path = dom
+	path = lib/dom
 	url = git@github.com:stephband/dom
