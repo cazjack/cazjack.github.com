@@ -10,3 +10,7 @@
 :root      { --navy: #005177; }
 .navy-fg   { color: #005177; stroke: #005177; }
 .navy-bg   { background-color: #005177; fill: #005177; }
+
+:root      { --pink: #fb12cc; }
+.pink-fg   { color: #fb12cc; stroke: #fb12cc; }
+.pink-bg   { background-color: #fb12cc; fill: #fb12cc; }
