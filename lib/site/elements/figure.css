@@ -1,0 +1,9 @@
+figure.left,
+figure.right {
+    margin-bottom: 0;
+}
+
+figure > img + .text-10 {
+    margin-top: calc(0.25 * var(--y-gap));
+    margin-bottom: calc(0.25 * var(--y-gap));
+}

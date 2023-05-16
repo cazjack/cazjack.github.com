@@ -18,6 +18,7 @@
 
 @import './classes/atoms.css';
 @import './classes/text.css';
+@import './classes/float.css';
 @import './classes/footer.css';
 @import './classes/color.css';
 
@@ -25,6 +26,7 @@
 @import './elements/audio.css';
 @import './elements/blockquote.css';
 @import './elements/body.css';
+@import './elements/figure.css';
 @import './elements/root.css';
 @import './elements/code.css';
 @import './elements/slide-show.css';

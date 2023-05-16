@@ -1,4 +1,8 @@
 
+:root      { --grey: #3f4548; }
+.grey-fg   { color: #3f4548; stroke: #3f4548; }
+.grey-bg   { background-color: #3f4548; fill: #3f4548; }
+
 :root      { --blue: #46789a; }
 .blue-fg   { color: #46789a; stroke: #46789a; }
 .blue-bg   { background-color: #46789a; fill: #46789a;  }
