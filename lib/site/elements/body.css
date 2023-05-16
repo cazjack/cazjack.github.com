@@ -13,6 +13,10 @@ body > hr + section {
     margin-top: var(--y-gap);
 }
 
+body > .grid + .grid {
+    margin-top: var(--y-gap);
+}
+
 body a {
     color: var(--slate3);
     text-decoration: none;
