@@ -1,0 +1,6 @@
+footer {
+    padding-top: var(--y-gap);
+    padding-bottom: calc(2 * var(--y-gap));
+    color: white;
+    background-color: black;
+}

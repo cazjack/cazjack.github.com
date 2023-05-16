@@ -1,4 +1,8 @@
 
+:root         { --lightgrey: #7c858a; }
+.lightgrey-fg { color: #7c858a; stroke: #7c858a; }
+.lightgrey-bg { background-color: #7c858a; fill: #7c858a; }
+
 :root      { --grey: #3f4548; }
 .grey-fg   { color: #3f4548; stroke: #3f4548; }
 .grey-bg   { background-color: #3f4548; fill: #3f4548; }

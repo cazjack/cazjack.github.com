@@ -1,8 +1,17 @@
 body {
     padding-top:    0;
     padding-bottom: calc(4 * 1.4em);
+}
+
+body,
+body > .grid {
     padding-left:  1.4rem;
     padding-right: 1.4rem;
+}
+
+body > .grid {
+    margin-left:  calc(-1 * var(--x-gap));
+    margin-right: calc(-1 * var(--x-gap));
 }
 
 body > hr {
@@ -37,15 +46,27 @@ body h4 {
 
 
 @media (min-width: 768px) {
-    body {
+    body,
+    body > .grid {
         padding-left:  2.1rem;
         padding-right: 2.1rem;
+    }
+
+    body > .grid {
+        margin-left:  calc(-1 * var(--x-gap));
+        margin-right: calc(-1 * var(--x-gap));
     }
 }
 
 @media (min-width: 1024px) {
-    body {
+    body,
+    body > .grid {
         padding-left:  1.05rem;
         padding-right: 1.05rem;
+    }
+
+    body > .grid {
+        margin-left:  calc(-0.5 * var(--x-gap));
+        margin-right: calc(-0.5 * var(--x-gap));
     }
 }
