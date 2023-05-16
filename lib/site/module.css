@@ -20,6 +20,7 @@
 @import './classes/text.css';
 @import './classes/float.css';
 @import './classes/color.css';
+@import './classes/mailchimp.css';
 
 @import './elements/a.css';
 @import './elements/audio.css';
