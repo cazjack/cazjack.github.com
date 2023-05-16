@@ -1,3 +1,3 @@
 # creativebusinessgrowth.co.uk
 
-This is the repository for creativebusinessgrowth.com by Caroline Jackman.
+This is the repository for creativebusinessgrowth.co.uk by Caroline Jackman.
