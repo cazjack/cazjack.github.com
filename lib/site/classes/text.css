@@ -52,7 +52,7 @@ code {
 }
 
 .text-xx        { font-size: calc(7.5rem + 2.22222222vw);        line-height: 1.05em;        font-weight: 600; }
-.text-00        { font-size: calc(3.75rem + 1.11111111vw);       line-height: 1.05em;        font-weight: 600; }
+.text-00        { font-size: calc(3.75rem + 1.11111111vw);       line-height: 0.94em;        font-weight: 600; }
 .text-01, h1    { font-size: calc(2.5rem + 0.74074074vw);        line-height: 1.05em;        font-weight: 600; }
 .text-02, h2    { font-size: calc(1.875rem + 0.55555556vw);      line-height: 1.3125em;      font-weight: 600; }
 .text-03, h3    { font-size: calc(1.5rem + 0.44444444vw);        line-height: 1.575em;       font-weight: 600; }

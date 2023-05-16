@@ -1,4 +1,8 @@
+
 header {
-    padding-top: var(--y-gap);
+    padding-top: calc(2 * var(--y-gap));
     padding-bottom: var(--y-gap);
+
+    background-color: var(--pink);
+    background-image: linear-gradient(126deg, rgb(179 0 54), transparent);
 }
