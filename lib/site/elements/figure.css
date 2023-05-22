@@ -7,3 +7,7 @@ figure > img + .text-10 {
     margin-top: calc(0.25 * var(--y-gap));
     margin-bottom: calc(0.25 * var(--y-gap));
 }
+
+.grid > figure {
+    width: 100%;
+}

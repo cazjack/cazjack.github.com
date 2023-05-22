@@ -119,27 +119,28 @@
         <div class="8x x1 @m-x2 @l-x3">
             <h2>Image sizes</h2>
             <p>
-                Many devices these days have high density screens, meaning lots of pixels.
-                So generally, we want images to have around 2x their size measured in the browser in order to look sharp on high resolution screens.
+                Many devices these days have high density screens, meaning lots of pixels available for sharp images.
+                So generally, we want images to have around 2x their actual size when measured in the browser.
                 But we also want to be careful of not making images <em>too</em> big, in terms of file size, because we want to keep the site fast.
             </p>
             <p>Here's some guidelineage:</p>
-            <ul>
-                <li>1. Work out roughly how wide the image will appear in the browser.</li>
-                <li>2. Double that.</li>
-                <li>3. Save photographs as <code>.jpg</code> files at that doubled resolution, using relatively high compression. ('Relatively high compression' means, for a jpg export, the 'quality' slider usually ends up between 40% - 80%. Pull it down as low as possible until you start to see unacceptable artifacts, which in a jpeg manifest as a sort of blurred blockiness).</li>
-            </ul>
-            <p>An example: left and right floated images end up around 400px-500px wide on the widest screens. Double that conservatively and we get 800px.</p>
+            <ol>
+                <li>Work out roughly how wide the image will appear in the browser.</li>
+                <li>Double that.</li>
+                <li>Save photographs as <code>.jpg</code> files at that doubled resolution, using relatively high compression.</li>
+            </ol>
+            <p>'Relatively high compression' means, for a JPG export, the 'quality' slider usually ends up between 40% - 80%. Pull it down as low as possible until you start to see unacceptable artifacts (which in a jpeg manifest as sort of blurred blocks). Remember we are working at double resolution: some unacceptable artifacts are acceptable; they become acceptable by the time the image has been halved in size in the browser.</p>
+            <p>Images of line art or logos or other non-photo content should be saved as <code>.png</code> files (select 'PNG24'). PNGs use lossless compression, so you don't get a quality slider, or any artifacts, but the file sizes are heavier.</p>
         </div>
 
         <figure class="8x x1 @m-x2 @l-x3">
             <img src="./images/collectfair.jpg" />
-            <figcaption class="text-10 grey-fg">An image (recommend ~1280px wide)</figcaption>
+            <figcaption class="text-10 grey-fg">An image (I recommend ~1200px wide)</figcaption>
         </figure>
 
         <figure class="8x x1 @m-x2 @l-x3">
-            <img src="./images/presentation.jpg" />
-            <figcaption class="text-10 grey-fg">An image (recommend ~1280px wide)</figcaption>
+            <img class="block" src="./images/presentation.jpg" />
+            <figcaption class="text-10 grey-fg">An image (I recommend ~1280px wide)</figcaption>
         </figure>
     </section>
 
