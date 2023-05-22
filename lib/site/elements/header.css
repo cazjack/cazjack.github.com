@@ -10,7 +10,7 @@ header {
     */
 
     background-image:
-        linear-gradient(126deg, rgba(148, 0, 45, 0.6), transparent 60%),
+        linear-gradient(126deg, rgba(148, 0, 45, 0.7), transparent 66%),
         url('../../../images/talking.jpg');
     background-size: auto, cover;
     background-position: 50% 50%, 0 33%;
