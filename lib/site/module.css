@@ -9,6 +9,7 @@
 
 @import "../bolt/classes/button.css";
 @import "../bolt/classes/list.css";
+@import "../bolt/classes/menu.css";
 @import "../bolt/classes/thumb.css";
 @import "../bolt/classes/block.css";
 @import "../bolt/classes/striped-table.css";
@@ -28,6 +29,7 @@
 @import './elements/body.css';
 @import './elements/header.css';
 @import './elements/footer.css';
+@import './elements/nav.css';
 @import './elements/figure.css';
 @import './elements/root.css';
 @import './elements/code.css';

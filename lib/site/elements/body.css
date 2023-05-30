@@ -44,8 +44,14 @@ body h4 {
     color: var(--slate1);
 }
 
+body > nav {
+    position: absolute;
+    top: max(calc(33vw - 2.8em), calc(3 * (0.94 * (3.75rem + 1.11111111vw) + 2.1rem) - 2.8em));
+    left:  1.4rem;
+    right: 1.4rem;
+}
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
     body,
     body > .grid {
         padding-left:  2.1rem;
@@ -56,9 +62,14 @@ body h4 {
         margin-left:  calc(-1 * var(--x-gap));
         margin-right: calc(-1 * var(--x-gap));
     }
+
+    body > nav {
+        left: auto;
+        right: 2.1rem;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
     body,
     body > .grid {
         padding-left:  1.05rem;
@@ -68,5 +79,15 @@ body h4 {
     body > .grid {
         margin-left:  calc(-0.5 * var(--x-gap));
         margin-right: calc(-0.5 * var(--x-gap));
+    }
+
+    body > nav {
+        right: calc(6.66666667% + 1.05rem);
+    }
+}
+
+@media (min-width: 85.375em) {
+    body > nav {
+        right: calc(11.1111111% + 1.05rem);
     }
 }
