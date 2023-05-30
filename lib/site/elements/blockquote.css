@@ -1,6 +1,6 @@
 blockquote {
     color: var(--beige1);
-    margin-left: 0;
+    margin-left: var(--x-gap);
 }
 
 blockquote > p + p {
