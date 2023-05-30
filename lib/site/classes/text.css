@@ -74,6 +74,7 @@ h1 > .tag-brace, .text-01 > .tag-brace {
 
 * + h3, * + .text-03 { margin-top: 1.05em; }
 * + h4, * + .text-04 { margin-top: 2.8em; }
+* + h6, * + .text-06 { margin-top: 0.46666667em; }
 
 * + p,
 * + pre,

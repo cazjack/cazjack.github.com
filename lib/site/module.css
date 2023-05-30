@@ -17,6 +17,7 @@
 
 @import "../bolt/classes/device.css";
 
+@import './classes/card.css';
 @import './classes/atoms.css';
 @import './classes/text.css';
 @import './classes/float.css';

@@ -1,0 +1,14 @@
+
+a.card:hover,
+a.card:focus-visible {
+    color: var(--blue);
+}
+
+a.card > img {
+    filter: brightness(0.9);
+}
+
+a.card:hover > img,
+a.card:focus-visible > img {
+    filter: brightness(1);
+}
