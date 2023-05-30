@@ -22,7 +22,8 @@ body > hr + section {
     margin-top: var(--y-gap);
 }
 
-body > .grid + .grid {
+body > .grid + .grid,
+body > .grid + nav + .grid {
     margin-top: var(--y-gap);
 }
 
