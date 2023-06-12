@@ -35,3 +35,7 @@
 #mc_embed_signup div#mce-responses .response {
     padding: 0;
 }
+
+#mc_embed_signup .button {
+    background-color: var(--pink);
+}
