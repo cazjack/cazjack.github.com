@@ -4,9 +4,20 @@ This is the repository for creativebusinessgrowth.co.uk by Caroline Jackman.
 
 ## HTML
 
-### Lists
+### `<a>`
 
-`<ul>` for Unordered List (bullet points) and `<ol>` for Ordered List (numbers), both must contain `<li>`s or List Items:
+Links.
+
+```html
+<a href="http://url-of-website.com/">The text on your page</a>
+```
+
+<a href="http://url-of-website.com/">The text on your page</a>
+
+
+### `<ul>` and `<ol>`
+
+Unordered List `<ul>` (bullet points) and Ordered List `<ol>` (numbers), both may only contain List Items `<li>` as their direct children:
 
 ```html
 <ul>
@@ -36,10 +47,6 @@ This is the repository for creativebusinessgrowth.co.uk by Caroline Jackman.
     <li>Second item</li>
     <li>Third item</li>
 </ol>
-
-### More semantics
-
-While we're at it, some more semantics.
 
 ### `<em>`
 
