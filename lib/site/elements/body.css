@@ -26,8 +26,13 @@ body > .grid + .grid {
     margin-top: var(--y-gap);
 }
 
+body > .more-section,
 body > .grid + nav + .grid {
     margin-top: calc(2 * var(--y-gap));
+}
+
+body > .more-section + nav + .grid {
+    margin-top: 0;
 }
 
 body > header.grid + .grid {
