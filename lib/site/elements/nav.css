@@ -8,6 +8,30 @@
     display: none;
 }
 
+.nav-list > li > .current::after {
+    content: '';
+    position: absolute;
+    bottom: -1.3em;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 0.9em;
+}
+/*
+.nav-list:hover > li > a::after {
+    content: none;
+}
+
+.nav-list > li > a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -1.3em;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 0.8em;
+}
+*/
 @media (min-width: 48em) {
     .nav-list {
         column-gap: 2.1rem;

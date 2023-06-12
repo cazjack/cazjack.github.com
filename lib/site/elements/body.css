@@ -27,6 +27,10 @@ body > .grid + nav + .grid {
     margin-top: var(--y-gap);
 }
 
+body > header.grid + .grid {
+    margin-top: calc(2 * var(--y-gap));
+}
+
 body a {
     color: var(--slate3);
     text-decoration: none;

@@ -1,12 +1,55 @@
 blockquote {
-    color: var(--beige1);
-    margin-left: var(--x-gap);
+    margin-left: calc(2 * var(--x-gap));
+    margin-right: 0;
+}
+
+blockquote::before {
+    color: var(--grey);
+    font-size: 3em;
+    line-height: 0.84em;
+    margin-left: calc(-2 * var(--x-gap));
+    margin-top: 0.04em;
+    font-weight: 700;
 }
 
 blockquote > p + p {
     margin-top: 1.05em !important;
 }
 
+blockquote > .text-09 {
+    font-weight: 300 !important;
+}
+
 * + blockquote {
     margin-top: 2.1em;
+}
+
+@media (min-width: 768px) {
+    blockquote {
+        margin-left: var(--x-gap);
+    }
+
+    blockquote::before {
+        margin-left: calc(-1.14 * var(--x-gap));
+    }
+
+    .right-blockquote {
+        float: right;
+        clear: right;
+        width: calc(50% - 0.5 * var(--x-gap));
+        margin-top: 1.05em;
+        margin-left: calc(2 * var(--x-gap));
+        margin-right: calc(-25% - 0.25 * var(--x-gap));
+
+        width: calc(75% - 1.25 * var(--x-gap));
+        margin-right: calc(-50% - 0.5 * var(--x-gap));
+    }
+}
+
+@media (min-width: 1366px) {
+    .right-blockquote {
+        width: calc(75% - 0.25 * var(--x-gap));
+        margin-left: calc(12.5% + 0.875 * var(--x-gap));
+        margin-right: calc(-75% - 0.75 * var(--x-gap));
+    }
 }
