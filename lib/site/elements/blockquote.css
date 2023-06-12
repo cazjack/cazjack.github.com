@@ -44,6 +44,10 @@ blockquote > .text-09 {
         width: calc(75% - 1.25 * var(--x-gap));
         margin-right: calc(-50% - 0.5 * var(--x-gap));
     }
+
+    * + .right-blockquote {
+        margin-top: 1.4em;
+    }
 }
 
 @media (min-width: 1366px) {
