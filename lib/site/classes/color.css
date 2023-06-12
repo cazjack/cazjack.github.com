@@ -18,3 +18,7 @@
 :root      { --pink: #fb12cc; }
 .pink-fg   { color: #fb12cc; stroke: #fb12cc; }
 .pink-bg   { background-color: #fb12cc; fill: #fb12cc; }
+
+:root        { --deeppink: #c4009c; }
+.deeppink-fg { color: #c4009c; stroke: #c4009c; }
+.deeppink-bg { background-color: #c4009c; fill: #c4009c; }

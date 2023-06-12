@@ -39,3 +39,8 @@
 #mc_embed_signup .button {
     background-color: var(--pink);
 }
+
+#mc_embed_signup .button:hover,
+#mc_embed_signup .button:focus {
+    background-color: var(--deeppink);
+}
