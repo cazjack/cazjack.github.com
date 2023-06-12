@@ -4,3 +4,7 @@
     padding-bottom: calc(2 * var(--y-gap));
     background-color: rgb(236, 232, 228);
 }
+
+* + .more-section {
+    margin-top: calc(2 * var(--y-gap));
+}
