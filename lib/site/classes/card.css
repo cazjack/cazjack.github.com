@@ -1,7 +1,7 @@
 
 a.card:hover,
 a.card:focus-visible {
-    color: var(--blue);
+    color: var(--deeppink);
 }
 
 a.card > img {
