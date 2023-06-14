@@ -59,9 +59,9 @@ body h4 {
 
 body > nav {
     position: absolute;
-    top: max(calc(33vw - 2.8em), calc(3 * (0.94 * (3.75rem + 1.11111111vw) + 2.1rem) - 2.8em));
+    top: max(calc(28.57142857vw - 2.1em), calc(3 * (0.94 * (3.75rem + 1.11111111vw)) + (3 * 2.1rem) - 2.3em));
     left:  1.4rem;
-    right: 1.4rem;
+    right: auto;
 }
 
 @media (min-width: 48em) {
@@ -77,8 +77,8 @@ body > nav {
     }
 
     body > nav {
-        left: auto;
-        right: 2.1rem;
+        top: max(calc(28.57142857vw - 2.1em), calc(3 * (0.94 * (3.75rem + 1.11111111vw)) + (3 * 2.1rem) - 2.1em));
+        left: 2.2rem;
     }
 }
 
@@ -95,12 +95,13 @@ body > nav {
     }
 
     body > nav {
-        right: calc(6.66666667% + 1.05rem);
+        top: max(calc(28.57142857vw - 2.1em), calc(3 * (0.94 * (3.75rem + 1.11111111vw)) + (5 * 2.1rem) - 2.1em));
+        left: calc(6.66666667% + 1.05rem);
     }
 }
 
 @media (min-width: 85.375em) {
     body > nav {
-        right: calc(11.1111111% + 1.05rem);
+        left: calc(11.1111111% + 1.05rem);
     }
 }
