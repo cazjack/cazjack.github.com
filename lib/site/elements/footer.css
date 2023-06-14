@@ -5,6 +5,12 @@ footer {
     background-color: black;
 }
 
+footer > small {
+    position: absolute;
+    right: calc(0.5 * var(--x-gap));
+    bottom: calc(0.5 * var(--x-gap));
+}
+
 @media (min-width: 64em) {
     footer {
         padding-top: calc(2 * var(--y-gap));

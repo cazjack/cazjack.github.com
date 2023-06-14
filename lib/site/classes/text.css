@@ -55,7 +55,9 @@ https://stephen.band/font-size/?breakpoints=360,1080&.text-xx=128,144&.text-00=6
 .text-06, h6,
 blockquote,
 .text-09,
-.text-10 {
+.text-10,
+.text-11,
+.text-12 {
     font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
 }
 

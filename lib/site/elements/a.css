@@ -4,7 +4,8 @@ a:not([class]) {
     text-decoration: none;
 }
 
-a:not([class]):hover {
+a:not([class]):hover,
+a.grey-fg:hover {
     color: var(--deeppink);
     text-decoration: underline;
 }
