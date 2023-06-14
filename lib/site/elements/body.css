@@ -59,9 +59,18 @@ body h4 {
 
 body > nav {
     position: absolute;
-    top: max(calc(28.57142857vw - 2.1em), calc(3 * (0.94 * (3.75rem + 1.11111111vw)) + (3 * 2.1rem) - 2.3em));
+    top: max(calc(28.57142857vw - 2.1em), calc(3 * (0.94 * (3.75rem + 1.11111111vw)) + (8 * 2.1rem) - 2.3em));
     left:  1.4rem;
     right: auto;
+}
+
+@media (min-width: 30em) {
+    body > nav {
+        position: absolute;
+        top: max(calc(28.57142857vw - 2.1em), calc(3 * (0.94 * (3.75rem + 1.11111111vw)) + (3 * 2.1rem) - 2.3em));
+        left:  1.4rem;
+        right: auto;
+    }
 }
 
 @media (min-width: 48em) {

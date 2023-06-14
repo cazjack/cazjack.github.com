@@ -1,13 +1,12 @@
 
 header {
-    min-height: 28.57142857vw;
     padding-top: var(--y-gap);
-    padding-bottom: calc(2 * var(--y-gap));
+    padding-bottom: calc(7 * var(--y-gap));
     background-image:
-        linear-gradient(126deg, rgba(148, 0, 45, 0.2), transparent 66%),
-        url('../../../images/header.jpg');
+        linear-gradient(156deg, rgba(148, 0, 45, 0.4), transparent 66%),
+        url('../../../images/header-960x960.jpg');
     background-size: auto, cover;
-    background-position: 50% 50%, 62.5% 33%;
+    background-position: 50% 50%, 62.5% 0%;
 }
 
 header > .text-00 {
@@ -16,7 +15,20 @@ header > .text-00 {
         0 0 2rem rgba(54, 0, 16, 0.6);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 30em) {
+    header {
+        min-height: 28.57142857vw;
+        padding-top: var(--y-gap);
+        padding-bottom: calc(2 * var(--y-gap));
+        background-image:
+            linear-gradient(126deg, rgba(148, 0, 45, 0.2), transparent 66%),
+            url('../../../images/header.jpg');
+        background-size: auto, cover;
+        background-position: 50% 50%, 62.5% 33%;
+    }
+}
+
+@media (min-width: 64em) {
     header {
         min-height: 28.57142857vw;
         padding-top: calc(2 * var(--y-gap));
