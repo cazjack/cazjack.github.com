@@ -1,4 +1,10 @@
 
+/*
+CMYK
+15 86 0 0
+*/
+
+
 :root         { --lightgrey: #7c858a; }
 .lightgrey-fg { color: #7c858a; stroke: #7c858a; }
 .lightgrey-bg { background-color: #7c858a; fill: #7c858a; }

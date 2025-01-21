@@ -1,0 +1,28 @@
+.post-toggle::part(content) {
+    min-height: 4lh;
+    padding-top: 1lh;
+    margin-top: -1lh;
+}
+
+.post-toggle > [slot="summary"] {
+    font-family: -apple-system, system-ui, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    line-height: inherit;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 1lh;
+}
+
+.post-toggle::part(summary) {
+    padding-top: 1lh;
+    order: 2;
+}
+
+.post-toggle[open]::part(summary) {
+    display: none !important;
+}
+
+.post-toggle + .post-toggle {
+    margin-top: 2lh;
+    padding-top: 1lh;
+    border-top: 1px solid rgba(0,0,0,0.6);
+}

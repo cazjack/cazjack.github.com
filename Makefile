@@ -8,4 +8,5 @@ DEBUG=
 #	deno run --allow-read --allow-env --allow-net --allow-write --allow-run --unstable ./lib/literal/deno/make-literal.js ./ debug
 
 modules:
-	deno run --allow-read --allow-env --allow-net --allow-write --allow-run ./lib/fn/deno/make-modules.js ./build/ ./lib/site/module.css ./lib/site/module.js
+	deno run --allow-read --allow-env --allow-net --allow-write --allow-run ./lib/fn/deno/make-css.js ./build/ ./lib/site/module.css
+	deno run --allow-read --allow-env --allow-net --allow-write --allow-run ./lib/fn/deno/make-modules.js ./build/ ./lib/site/module.js

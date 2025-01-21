@@ -1,0 +1,229 @@
+
+/* LinkedIn Card */
+
+.update-components-actor__container {
+    font-family: -apple-system, system-ui, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.update-components-actor__container a:hover,
+.update-components-actor__container a:focus-visible,
+.update-components-actor__container a:hover *,
+.update-components-actor__container a:focus-visible * {
+    color: var(--pink);
+    fill: var(--pink);
+}
+
+.flex-grow-1 {
+    flex-grow: 1 !important;
+}
+.display-flex {
+    display: flex !important;
+}
+
+
+
+.update-components-actor__image {
+    flex-shrink: 0;
+    outline-offset: 1px !important;
+    margin-top: 2px;
+    margin-left: 2px;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.relative {
+    position: relative;
+}
+
+.update-components-actor__meta-link {
+
+}
+
+
+
+
+.update-components-actor__avatar-image.update-components-actor__avatar-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.ivm-view-attr__img-wrapper .ivm-view-attr__icon, .ivm-view-attr__img-wrapper [class*=ivm-view-attr__icon], .ivm-view-attr__img-wrapper [class*=ivm-view-attr__img], .ivm-view-attr__img-wrapper img, .ivm-view-attr__img-wrapper li-icon {
+    display: block;
+}
+
+.ivm-view-attr__img--centered {
+    background-position: 50%;
+    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+}
+:lang(en) {
+    font-family: var(--artdeco-reset-typography-font-family-sans);
+}
+.artdeco-entity-lockup [class*=artdeco-entity-lockup__image--type-circle] img, [class*=artdeco-entity-pile__image--circle], [class*=EntityPhoto-circle] {
+    border-radius: 50%;
+}
+.artdeco-entity-lockup [class*=artdeco-entity-lockup__image--type-circle] img, .artdeco-entity-lockup [class*=artdeco-entity-lockup__image--type-square] img, [class*=artdeco-entity-pile__image--circle], [class*=artdeco-entity-pile__image--square], [class*=EntityPhoto-circle], [class*=EntityPhoto-square] {
+    background-color: var(--color-background-container);
+    color: var(--color-text);
+    border: none;
+    box-shadow: none;
+}
+.EntityPhoto-circle-3, .EntityPhoto-circle-3-ghost-person {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    border-radius: 49.9%;
+}
+
+
+.update-components-actor__meta {
+    padding: 2px;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: .8rem;
+    overflow: hidden;
+}
+
+:lang(en) {
+    font-family: var(--artdeco-reset-typography-font-family-sans);
+}
+.relative {
+    position: relative !important;
+}
+.pt0, .pv0 {
+    padding-top: 0 !important;
+}
+.pv0 {
+    padding-bottom: 0 !important;
+}
+
+
+/* LinkedIn icon */
+
+li-icon > svg {
+    fill: rgb(10, 102, 194);
+    stroke-width: 0px !important;
+}
+
+/* World icon */
+
+/*
+li-icon svg[data-supported-dps="16x16"] {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+svg[data-supported-dps="16x16"] {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+:lang(en) {
+    font-family: var(--artdeco-reset-typography-font-family-sans);
+}
+li-icon>svg {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    fill: currentcolor;
+    stroke: transparent;
+    stroke-width: 0px;
+}
+*/
+
+/* Name text */
+
+
+.kgDPXkLQKouRClQPVOdEYtMnqfCCpJTUntJk, .update-components-actor__name {
+    vertical-align: top;
+    display: inline-block;
+}
+
+:lang(en) {
+    font-family: var(--artdeco-reset-typography-font-family-sans);
+}
+.text-body-medium-bold {
+    font-size:   1em;
+    font-weight: 700;
+    line-height: var(--line-height-default);
+}
+.white-space-nowrap {
+    white-space: nowrap !important;
+}
+.t-black {
+    color: var(--color-text);
+}
+
+
+/* Small text */
+
+.update-components-actor__description {
+    text-overflow: ellipsis;
+    display: block;
+}
+
+:lang(en) {
+    font-family: var(--artdeco-reset-typography-font-family-sans);
+}
+
+.text-body-xsmall, .text-body-xsmall-open {
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--font-weight-regular);
+}
+.text-body-xsmall {
+    font-size: 0.8em;
+    line-height: 1.25em;
+}
+.t-black--light {
+    color: var(--color-text-low-emphasis);
+    color: rgba(0,0,0,0.6);
+}
+
+/* Post date */
+
+.update-components-actor__supplementary-actor-info,
+.update-components-actor__sub-description {
+    display: none !important;
+}
+
+
+
+
+/* */
+
+.app-aware-link {
+    /* Hashtag */
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+
+.feed-shared-update-v2__description-wrapper {
+    font-family: -apple-system, system-ui, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    /*border-top: 1px solid rgba(0,0,0,0.6);*/
+}
+
+.feed-shared-update-v2__description-wrapper,
+.feed-shared-update-v2__description-wrapper * {
+    /*background: rgba(0,0,0,0.05);*/
+}
+
+.feed-shared-update-v2__description-wrapper + .feed-shared-update-v2__description-wrapper {
+    border-top: 1px solid rgba(0,0,0,0.6);
+    margin-top: 2em;
+    padding-top: 1em;
+}

@@ -1,0 +1,7 @@
+{
+    "imports": {
+        "bolt/": "./lib/bolt/",
+        "dom/":  "./lib/dom/modules/",
+        "fn/":   "./lib/fn/modules/"
+    }
+}

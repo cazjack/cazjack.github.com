@@ -10,3 +10,6 @@
 [submodule "dom"]
 	path = lib/dom
 	url = git@github.com:stephband/dom
+[submodule "lib/details-toggle"]
+	path = lib/details-toggle
+	url = git@github.com:stephband/details-toggle.git
