@@ -1,0 +1,4 @@
+.icon-thumb > svg {
+    stroke-width: 0;
+    fill: rgb(10, 102, 194);
+}

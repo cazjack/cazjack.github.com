@@ -105,10 +105,13 @@
 
 /* LinkedIn icon */
 
+.linkedin-svg,
 li-icon > svg {
     fill: rgb(10, 102, 194);
     stroke-width: 0px !important;
 }
+
+
 
 /* World icon */
 
@@ -196,7 +199,8 @@ li-icon>svg {
 
 /* */
 
-.app-aware-link {
+.app-aware-link,
+[data-test-app-aware-link] {
     /* Hashtag */
     color: var(--pink);
     text-decoration: none;
@@ -210,20 +214,9 @@ li-icon>svg {
 }
 
 
-
+.feed-shared-update-v2__description,
 .feed-shared-update-v2__description-wrapper {
     font-family: -apple-system, system-ui, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
     font-size: 1em;
     /*border-top: 1px solid rgba(0,0,0,0.6);*/
-}
-
-.feed-shared-update-v2__description-wrapper,
-.feed-shared-update-v2__description-wrapper * {
-    /*background: rgba(0,0,0,0.05);*/
-}
-
-.feed-shared-update-v2__description-wrapper + .feed-shared-update-v2__description-wrapper {
-    border-top: 1px solid rgba(0,0,0,0.6);
-    margin-top: 2em;
-    padding-top: 1em;
 }

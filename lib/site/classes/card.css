@@ -12,3 +12,36 @@ a.card:hover > img,
 a.card:focus-visible > img {
     filter: brightness(1);
 }
+
+svg.inline-block {
+    vertical-align: -0.25em;
+}
+
+.avatar-card {
+    position: relative;
+    display: block;
+    padding-left: 3.75rem;
+    hyphens: none;
+}
+
+.avatar-card > .text-06 {
+    margin-top: 0;
+}
+
+.avatar-card > img {
+    position: absolute;
+    left: -1px;
+    filter: brightness(1);
+}
+
+a.avatar-card > img {
+    filter: brightness(1);
+}
+
+a.avatar-card:hover,
+a.avatar-card:focus-visible,
+a.avatar-card:hover *,
+a.avatar-card:focus-visible * {
+    color: var(--pink);
+    fill: var(--pink);
+}

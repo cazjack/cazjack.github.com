@@ -1,5 +1,9 @@
+.post-toggle {
+    position: relative;
+}
+
 .post-toggle::part(content) {
-    min-height: 4lh;
+    min-height: 4.125lh;
     padding-top: 1lh;
     margin-top: -1lh;
 }
@@ -18,11 +22,27 @@
 }
 
 .post-toggle[open]::part(summary) {
-    display: none !important;
+    padding-top: 1lh;
+}
+
+.post-toggle > h4 {
+    position: absolute;
+    top: 0.25em;
+    right: 0;
+    text-align: right;
+}
+
+.post-toggle > img {
+    margin-top: 1lh;
+    max-width: 100%;
+    width: 100%;
+}
+
+.post-toggle {
+    padding-top: 1.25lh;
+    border-top: 1px solid var(--lightgrey);
 }
 
 .post-toggle + .post-toggle {
     margin-top: 2lh;
-    padding-top: 1lh;
-    border-top: 1px solid rgba(0,0,0,0.6);
 }

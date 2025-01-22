@@ -58,7 +58,7 @@ blockquote,
 .text-10,
 .text-11,
 .text-12 {
-    font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .text-xx        { font-size: calc(7.5rem + 2.22222222vw);        line-height: 1.05em;        font-weight: 600; }
@@ -71,7 +71,7 @@ blockquote,
 .text-06, h6    { font-size: calc(0.9375rem + 0.27777778vw);     line-height: 1.4em;         font-weight: 600; }
 .text-07        { font-size: calc(1.07142857rem + 0.31746032vw); line-height: 1.225em;       font-weight: 400; }
 .text-08, body  { font-size: calc(0.9375rem + 0.27777778vw);     line-height: 1.4em;         font-weight: 400; }
-.text-09        { font-size: calc(0.83333333rem + 0.24691358vw); line-height: 1.4em;       font-weight: 400; }
+.text-09        { font-size: calc(0.83333333rem + 0.24691358vw); line-height: 1.4em;         font-weight: 400; }
 .text-10        { font-size: calc(0.75rem + 0.22222222vw);       line-height: 1.166666667em; font-weight: 400; }
 .text-11        { font-size: calc(0.68181818rem + 0.2020202vw);  line-height: 1.283333333em; font-weight: 400; }
 .text-12        { font-size: calc(0.625rem + 0.18518519vw);      line-height: 1.4em;         font-weight: 400; }

@@ -17,12 +17,14 @@
 @import "../bolt/classes/thumb.css";
 @import "../bolt/classes/block.css";
 @import "../bolt/classes/striped-table.css";
+@import "../bolt/classes/active.css";
 @import "../bolt/classes/color.css";
 
 @import "../bolt/classes/device.css";
 
 @import './classes/card.css';
 @import './classes/more.css';
+@import './classes/thumb.css';
 @import './classes/post.css';
 @import './classes/atoms.css';
 @import './classes/text.css';
