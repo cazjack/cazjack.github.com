@@ -1,7 +1,7 @@
 
 a.card:hover,
 a.card:focus-visible {
-    color: var(--deeppink);
+    color: var(--pink);
 }
 
 a.card > img {
@@ -16,6 +16,14 @@ a.card:focus-visible > img {
 svg.inline-block {
     vertical-align: -0.25em;
 }
+
+/* .project-card */
+
+.project-card > img {
+    aspect-ratio: 16 / 9;
+}
+
+/* .avatar-card */
 
 .avatar-card {
     position: relative;

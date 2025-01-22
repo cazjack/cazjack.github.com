@@ -21,15 +21,23 @@
     <!-- Style -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./build/module.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500&family=Source+Serif+4:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500&family=Source+Serif+4:wght@400&display=swap" rel="stylesheet"-->
 
     <!-- Interaction -->
     <script title="load">
         document.documentElement.className += ' js loading';
         window.addEventListener('load', () => window.requestAnimationFrame(() => document.documentElement.classList.remove('loading')));
     </script>
+
+    <!--script type="importmap">{
+        "imports": {
+            "bolt/": "./lib/bolt/",
+            "dom/":  "./lib/dom/modules/",
+            "fn/":   "./lib/fn/modules/"
+        }
+    }</script-->
 </head>
 <body class="index-body">
     <header class="8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid white-fg pink-bg">
@@ -67,25 +75,25 @@
             <h2>Projects</h2>
         </div>
 
-        <a href="./projects/collect-art-fair" class="card 8x x1 @s-x1 @s-6x @m-x2 @l-x3">
+        <a href="./projects/collect-art-fair" class="project-card card 8x x1 @s-x1 @s-6x @m-x2 @l-x3">
              <img src="./images/collectfair.jpg" />
              <p class="text-06">Collect Open business consultant</p>
              <p class="text-09">Coach and Selector</p>
         </a>
 
-        <a href="./projects/craft-industry-research" class="card 8x x1 @s-x7 @s-6x @m-x8 @l-x9">
+        <a href="./projects/craft-industry-research" class="project-card card 8x x1 @s-x7 @s-6x @m-x8 @l-x9">
              <img src="./images/research.jpg" />
              <p class="text-06">Environmental, financial and social sustainability in craft businesses</p>
              <p class="text-09">Researcher and project manager</p>
         </a>
 
-        <a href="./projects/crafting-business" class="card 8x x1 @s-x1 @s-6x @m-x2 @l-x3">
+        <a href="./projects/crafting-business" class="project-card card 8x x1 @s-x1 @s-6x @m-x2 @l-x3">
              <img src="./images/team.jpg" />
              <p class="text-06">Make:Grow:Flourish - European Training Programme for craft enterprizes</p>
              <p class="text-09">Producer, project manager, trainer and coach</p>
         </a>
 
-        <a href="./projects/exporting" class="card 8x x1 @s-x7 @s-6x @m-x8 @l-x9">
+        <a href="./projects/exporting" class="project-card card 8x x1 @s-x7 @s-6x @m-x8 @l-x9">
              <img src="./images/export.jpg" />
              <p class="text-06">Toolkits and guides for craft business trade with Europe post Brexit</p>
              <p class="text-09">Project manager, advisor and author</p>
@@ -96,6 +104,7 @@
         <ul class="nav-list list white-fg">
             <li><a class="text-05 current" href="./index" class="white-fg">Home</a></li>
             <li><a class="text-05" href="./projects" class="white-fg">Projects</a></li>
+            <li><a class="text-05" href="./posts" class="white-fg">Posts</a></li>
             <li><a class="text-05" href="./about" class="white-fg">About</a></li>
         </ul>
     </nav>
@@ -108,8 +117,18 @@
         </div>
 
         <div class="8x x1 @s-6x @m-x2 @l-x3">
-            <h2 class="text-06">Projects</h2>
+            <h2 class="text-06">Social</h2>
             <p class="text-09"><a class="lightgrey-fg" href="https://www.linkedin.com/in/caroline-jackman/">linkedin.com/in/caroline-jackman/</a></p>
+            <p class="text-09"><a class="lightgrey-fg" href="https://www.instagram.com/carolinejackmanartist/">instagram.com/carolinejackmanartist/</a></p>
+            <p>
+                <a class="icon-thumb thumb size-30" href="linkedin.com/in/caroline-jackman/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a class="icon-thumb thumb size-30" href="linkedin.com/in/caroline-jackman/" style="background-image:url('./images/instagram-icon.png'); background-size: 1.5625rem auto; background-position: center 0.125rem;">Instagram</a>
+            </p>
         </div>
 
         <div class="8x x1 @s-x7 @s-6x @s-2y @s-y1 @m-x8 @l-x9">

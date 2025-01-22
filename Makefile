@@ -9,4 +9,5 @@ DEBUG=
 
 modules:
 	deno run --allow-read --allow-env --allow-net --allow-write --allow-run ./lib/fn/deno/make-css.js ./build/ ./lib/site/module.css
+	deno run --allow-read --allow-env --allow-net --allow-write --allow-run ./lib/fn/deno/make-css.js ./build/ ./lib/details-toggle/shadow.css
 	deno run --allow-read --allow-env --allow-net --allow-write --allow-run ./lib/fn/deno/make-modules.js ./build/ ./lib/site/module.js
