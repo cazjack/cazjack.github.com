@@ -1,0 +1,4 @@
+ul > li::marker {
+    content: '– ';
+    margin-right: 1em;
+}
