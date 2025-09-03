@@ -1,4 +1,14 @@
+ul {
+    margin-left: 1.25em;
+}
+
 ul > li::marker {
     content: '– ';
     margin-right: 1em;
+}
+
+@media (min-width: 1024px) {
+    ul {
+        margin-left: 0;
+    }
 }
