@@ -30,7 +30,7 @@ blockquote > .text-09 {
     }
 
     blockquote::before {
-        margin-left: calc(-1.14 * var(--x-gap));
+        margin-left: calc(-1.2 * var(--x-gap));
     }
 
     .right-blockquote {

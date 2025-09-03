@@ -1,7 +1,10 @@
 {
     "imports": {
-        "bolt/": "./lib/bolt/",
-        "dom/":  "./lib/dom/modules/",
-        "fn/":   "./lib/fn/modules/"
-    }
+        "dom/":        "https://cdn.jsdelivr.net/gh/stephband/dom@1.4.0/modules/",
+        "fn/":         "https://cdn.jsdelivr.net/gh/stephband/fn@1.5.1/modules/",
+        "bolt/":       "https://cdn.jsdelivr.net/gh/stephband/bolt-2@1.0.1/",
+        "slide-show/": "https://cdn.jsdelivr.net/gh/stephband/slide-show@1.2.8/"
+    },
+
+    "lock": false
 }
