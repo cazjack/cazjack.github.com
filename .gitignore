@@ -1,0 +1,4 @@
+assets/
+archive/
+*.local
+*.local.*
