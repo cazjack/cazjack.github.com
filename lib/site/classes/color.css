@@ -9,10 +9,6 @@
 .grey-fg     { color: #3f4548; stroke: #3f4548; }
 .grey-bg     { background-color: #3f4548; fill: #3f4548; }
 
-:root        { --blue: #46789a; }
-.blue-fg     { color: #46789a; stroke: #46789a; }
-.blue-bg     { background-color: #46789a; fill: #46789a;  }
-
 :root        { --navy: #005177; }
 .navy-fg     { color: #005177; stroke: #005177; }
 .navy-bg     { background-color: #005177; fill: #005177; }
@@ -24,6 +20,12 @@
 :root        { --deeppink: #c4009c; }
 .deeppink-fg { color: #c4009c; stroke: #c4009c; }
 .deeppink-bg { background-color: #c4009c; fill: #c4009c; }
+
+
+
+:root        { --blue: #447b98; }
+.blue-fg     { color: var(--blue); stroke: var(--blue); }
+.blue-bg     { background-color: var(--blue); fill: var(--blue); }
 
 :root        { --cream-00: #f7f3ec; }
 .cream-00-fg { color: var(--cream-00); stroke: var(--cream-00); }
