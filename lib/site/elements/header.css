@@ -2,11 +2,16 @@
 header {
     padding-top: var(--y-gap);
     padding-bottom: calc(7 * var(--y-gap));
-    background-image:
+    /*background-image:
         linear-gradient(156deg, rgba(148, 0, 45, 0.4), transparent 66%),
         url('../../../images/header-960x960.jpg');
     background-size: auto, cover;
     background-position: 50% 50%, 62.5% 0%;
+    */
+    background: none;
+    min-height: 0;
+    padding: 1.75rem 0 0;
+
 }
 
 header > .text-00 {
@@ -14,7 +19,7 @@ header > .text-00 {
         0 0 1.4rem rgba(0, 0, 0, 0.6),
         0 0 2rem rgba(54, 0, 16, 0.6);
 }
-
+/*
 @media (min-width: 30em) {
     header {
         min-height: 28.57142857vw;
@@ -35,3 +40,38 @@ header > .text-00 {
         padding-bottom: calc(3 * var(--y-gap));
     }
 }
+*/
+
+
+.topbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--cream-02);
+}
+.brand {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.topnav { display: flex; gap: 1.75rem; list-style: none; margin: 0; padding: 0; }
+.topnav li::marker, .social-icons li::marker { content: ''; }
+.topnav a {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--cream-06);
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid transparent;
+    transition: color 200ms ease, border-color 200ms ease;
+}
+.topnav a:hover { color: var(--ink); border-color: var(--ink); }
+.topnav a.current { color: var(--ink); border-color: var(--rust-01); }

@@ -1,0 +1,24 @@
+
+.reveal {
+    transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.loading .reveal,
+.reveal.unrevealed {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0s ease, transform 0s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .loading .reveal,
+    .reveal.unrevealed {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

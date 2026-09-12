@@ -9,3 +9,8 @@ a.grey-fg:hover {
     color: var(--deeppink);
     text-decoration: underline;
 }
+
+a:focus-visible, input:focus-visible, button:focus-visible {
+    outline: 2px solid var(--rust-01);
+    outline-offset: 3px;
+}

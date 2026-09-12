@@ -10,6 +10,7 @@
     line-height: 1.35;
     color: var(--ink);
     margin: 0;
+    font-optical-sizing: auto;
 }
 
 .quote .text-12 {

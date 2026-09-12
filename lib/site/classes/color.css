@@ -37,9 +37,17 @@
 .cream-02-fg { color: var(--cream-02); stroke: var(--cream-02); }
 .cream-02-bg { background-color: var(--cream-02); fill: var(--cream-02); }
 
+:root        { --cream-05: #857969; }
+.cream-05-fg { color: var(--cream-05); stroke: var(--cream-05); }
+.cream-05-bg { background-color: var(--cream-05); fill: var(--cream-05); }
+
 :root        { --cream-06: #6b6153; }
 .cream-06-fg { color: var(--cream-06); stroke: var(--cream-06); }
 .cream-06-bg { background-color: var(--cream-06); fill: var(--cream-06); }
+
+:root        { --cream-07: #453e33; }
+.cream-07-fg { color: var(--cream-07); stroke: var(--cream-07); }
+.cream-07-bg { background-color: var(--cream-07); fill: var(--cream-07); }
 
 :root        { --cream-08: #211B15; }
 .cream-08-fg { color: var(--cream-08); stroke: var(--cream-08); }
