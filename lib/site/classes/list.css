@@ -1,0 +1,21 @@
+
+@import "https://cdn.jsdelivr.net/gh/stephband/bolt-2@1.0.9/classes/list.css";
+
+
+.lined-list > .text-04 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.lined-list > li + li {
+    margin-top: 0 !important;
+    border-top: 1px solid var(--cream-02);
+}
+
+* + .lined-list {
+    margin-top: 1.25em;
+}
+
+.lined-list + p {
+    margin-top: 1.25em;
+}
