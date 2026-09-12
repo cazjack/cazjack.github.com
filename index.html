@@ -5,12 +5,12 @@
 
     <meta charset="utf-8" />
     <meta name="author" content="Caroline Jackman" />
-    <meta name="description" content="Caroline Jackman — coaching, facilitation, learning design and curation across the UK creative and cultural sectors. Purposeful spaces where people can think well, and think well together." />
-    <meta name="keywords" content="coaching, facilitation, learning design, curation, creative sector, cultural sector, artists, galleries, Time to Think">
+    <meta name="description" content="Creative Business Growth — coaching, facilitation, learning design and curation across the UK creative and cultural sectors. Purposeful spaces where people can think well, and think well together." />
+    <meta name="keywords" content="coaching, facilitation, learning design, curation, creative sector, cultural sector, artists, galleries, creative, business, consultant, development, workshop, project management">
     <meta name="viewport" content="width=device-width" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:title" content="Caroline Jackman · Space to think" />
+    <meta property="og:title" content="Creative Business Growth" />
     <meta property="og:description" content="Coaching, facilitation, learning design and curation across the creative and cultural sectors." />
     <meta property="og:image" content="https://creativebusinessgrowth.co.uk/images/header.jpg" />
     <meta property="og:url" content="https://creativebusinessgrowth.co.uk" />
@@ -30,9 +30,11 @@
     <script title="load">
         document.documentElement.className += ' js loading';
         window.addEventListener('load', () => {
+            // Unreveal elements to be revealed on intersection
             if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
                 document.querySelectorAll('.reveal').forEach((target) => target.classList.add('unrevealed'));
             }
+            // Remove loading
             window.requestAnimationFrame(() => document.documentElement.classList.remove('loading'));
         });
     </script>
@@ -42,7 +44,6 @@
             "dom/":        "https://cdn.jsdelivr.net/gh/stephband/dom@1.4.9/modules/",
             "fn/":         "https://cdn.jsdelivr.net/gh/stephband/fn@1.6.6/modules/",
             "bolt/":       "https://cdn.jsdelivr.net/gh/stephband/bolt-2@1.0.9/",
-            "literal/":    "https://cdn.jsdelivr.net/gh/stephband/literal@0.9.8/",
             "slide-show/": "https://cdn.jsdelivr.net/gh/stephband/slide-show@1.2.8/"
         }
     }</script>
@@ -70,7 +71,6 @@
         <img src="./images/header.jpg" alt="Caroline Jackman speaking at the Goldsmiths' Hall" />
     </div>
 
-    <!-- NOTICING / WHO AM I -->
     <section class="section-pad 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
         <h2 class="text-02 8x x1 @s-9x @s-x2 @m-8x @m-x3 @l-8x @l-x4 reveal">Noticing matters.</h2>
         <div class="8x x1 @s-9x @s-x2 @m-8x @m-x3 @l-8x @l-x4 reveal">
@@ -83,7 +83,6 @@
         </div>
     </section>
 
-    <!-- WHAT BRINGS YOU HERE -->
     <section class="brings section-pad 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
         <h2 class="text-02 8x x1 @s-9x @m-12x @m-x3 @l-12x @l-x4 reveal">What brings you here?</h2>
         <div class="8x x1 @s-9x @m-8x @m-x3 @l-8x @l-x4 reveal">

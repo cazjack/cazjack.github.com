@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.quote p:first-child {
+.quote p {
     font-style: italic;
     font-weight: 400;
     font-size: clamp(1.2rem, 0.95rem + 0.9vw, 1.6rem);
