@@ -137,58 +137,20 @@
 
 
 
-    /* ---- Full-bleed image band ----------------------------------- */
-    .band {
-        width: auto;
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
-        margin-top: clamp(2.5rem, 5vw, 4.5rem);
-        margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
-        aspect-ratio: 2560 / 732;
-        max-height: 60vh;
-        overflow: hidden;
-        background: var(--cream-08);
-    }
-    .band img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .band { opacity: 0; transition: opacity 900ms ease; }
-    .band.in { opacity: 1; }
 
     section { position: relative; }
     .section-pad { padding: clamp(2.5rem, 6vw, 5rem) 0; }
 
-    /* ---- Closing prompt ----------------------------------------- */
-    .closing { background: var(--cream-01); }
-    .closing .prompts {
-        list-style: none;
-        margin: 1.75rem 0 0;
-        padding: 0;
-    }
-    .closing .prompts li {
-        font-family: 'Fraunces', Georgia, serif;
-        font-optical-sizing: auto;
-        font-size: clamp(1.35rem, 1rem + 1.1vw, 1.9rem);
-        line-height: 1.3;
-        color: var(--ink);
-        padding: 0.9rem 0;
-        border-bottom: 1px solid var(--cream-02);
-        display: flex;
-        gap: 0.9em;
-    }
-    .closing .prompts li::before {
-        content: counter(prompt, decimal-leading-zero);
-        counter-increment: prompt;
-        font-family: 'IBM Plex Mono', ui-monospace, monospace;
-        font-size: 0.8rem;
-        color: var(--rust-01);
-        padding-top: 0.5em;
-    }
-    .closing .prompts { counter-reset: prompt; }
+
+
+
+
 
     /* ---- Footer -------------------------------------------------- */
     body footer {
         background: var(--cream-08);
         color: var(--cream-00);
-        padding: clamp(3rem, 6vw, 5rem) 0 2rem;
+        padding-top: clamp(3rem, 6vw, 5rem);
     }
     body footer h2 {
         font-family: 'IBM Plex Mono', ui-monospace, monospace;
@@ -202,41 +164,6 @@
     body footer p { font-size: 0.95rem; line-height: 1.6; margin: 0.2rem 0; }
     body footer small, body footer .text-11 { color: rgba(243,236,224,0.5); }
 
-    /* Mailchimp, de-clownified */
-    #mc_embed_signup { background: none; font-family: inherit; width: 100%; }
-    #mc_embed_signup .mc-field-group { padding-bottom: 0; }
-    #mc_embed_signup label { color: rgba(243,236,224,0.6); font-size: 0.75rem; letter-spacing: 0.05em; }
-    #mc_embed_signup input[type=email] {
-        width: 100%;
-        margin-top: 0.5rem;
-        padding: 0.7rem 0.85rem;
-        background: rgba(243,236,224,0.06);
-        border: 1px solid rgba(243,236,224,0.2);
-        border-radius: 3px;
-        color: var(--cream-00);
-        font-family: inherit;
-        font-size: 0.95rem;
-    }
-    #mc_embed_signup input[type=email]::placeholder { color: rgba(243,236,224,0.35); }
-    #mc_embed_signup input[type=email]:focus { outline: none; border-color: var(--ochre); }
-    #mc_embed_signup .button {
-        margin-top: 0.85rem;
-        background: var(--rust-01);
-        color: var(--cream-00);
-        border: none;
-        border-radius: 3px;
-        padding: 0.7rem 1.4rem;
-        font-family: 'IBM Plex Mono', ui-monospace, monospace;
-        font-size: 0.8rem;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        cursor: pointer;
-        height: auto;
-        transition: background 200ms ease, transform 120ms ease;
-    }
-    #mc_embed_signup .button:hover { background: var(--rust-02); }
-    #mc_embed_signup .button:active { transform: translateY(1px); }
-    #mc_embed_signup .brandingLogo { display: none; }
 
     /* Footer links — raise specificity above module.css a:not([class]) pink */
     .index-body footer a {
@@ -338,8 +265,8 @@
         <h1 class="text-00 8x x1 @s-12x @m-x2 @m-10x @l-x3 reveal">What one thing has <em class="rust-01-fg">made you smile</em> today?</h1>
     </div>
 
-    <div class="band">
-        <img src="./images/header.jpg" alt="Caroline Jackman speaking at the Goldsmiths' Hall, ceramics on display behind her" />
+    <div class="banner">
+        <img src="./images/header.jpg" alt="Caroline Jackman speaking at the Goldsmiths' Hall" />
     </div>
 
     <!-- NOTICING / WHO AM I -->
@@ -453,22 +380,22 @@
         </div>
     </section>
 
-    <!-- CLOSING PROMPT -->
-    <section class="closing section-pad 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
+    <section class="section-pad 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
+        <div class="8x x1 @m-x3 @l-x4">
+            <h2 class="text-02 8x x1 @s-9x @m-12x @m-x3 @l-12x @l-x4 reveal">Not quite sure what you need yet?</h2>
+        </div>
         <div class="8x x1 @s-9x @s-x2 @m-8x @m-x3 @l-8x @l-x4 reveal">
-            <p class="kicker">Not quite sure what you need yet?</p>
-            <p class="lead">Perhaps start here.</p>
-            <ol class="prompts">
-                <li>What is making you happy right now?</li>
-                <li>What one thing would you change?</li>
-                <li>What is getting in the way of that?</li>
-            </ol>
-            <p style="margin-top:1.75rem;">You don&rsquo;t need to have the answer. A conversation can be the beginning.</p>
+            <p>Perhaps start here&hellip;</p>
+            <ul class="lined-list list">
+                <li class="text-04">What is making you happy right now?</li>
+                <li class="text-04">What one thing would you change?</li>
+                <li class="text-04">What is getting in the way of that?</li>
+            </ul>
+            <p>You don&rsquo;t need to have all the answers. A conversation can be the beginning.</p>
             <a class="cta" href="mailto:caroline@creativebusinessgrowth.co.uk">Start a conversation <span class="arrow">→</span></a>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
         <div class="8x x1 @s-6x @m-x3 @m-4x @l-x4 @l-4x">
             <h2>General enquiries</h2>
@@ -497,7 +424,7 @@
                     <div id="mc_embed_signup_scroll">
                         <h2>Join my newsletter</h2>
                         <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email address</label>
+                            <label for="mce-EMAIL" class="text-11">Email address</label>
                             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="you@example.com">
                             <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
                         </div>
@@ -521,13 +448,13 @@
             <!--End Mailchimp Signup -->
         </div>
 
-        <small class="text-11 no-wrap 8x x1 @s-12x @m-x3 @m-11x @l-x4 @l-12x" style="margin-top:2.5rem;">&copy;2026 Caroline Jackman. Website by <a href="https://stephen.band">stephen.band</a></small>
+        <small class="text-12 no-wrap x-end x1 8x @s-12x @m-15x @l-18x" style="margin-top:2.5rem;">&copy;2026 Caroline Jackman. Website by <a href="https://stephen.band">stephen.band</a></small>
     </footer>
 
     <script>
     // Staggered scroll reveal
     (function () {
-        const targets = document.querySelectorAll('.reveal, .band');
+        const targets = document.querySelectorAll('.reveal, .banner');
         if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
             targets.forEach((el) => el.classList.add('in'));
             return;

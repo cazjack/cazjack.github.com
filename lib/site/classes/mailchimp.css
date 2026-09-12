@@ -1,7 +1,8 @@
 
 #mc_embed_signup {
     width: 100%;
-    font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
+    background: none;
+    font-family: inherit;
 }
 
 #mc_embed_signup form {
@@ -36,11 +37,41 @@
     padding: 0;
 }
 
-#mc_embed_signup .button {
-    background-color: var(--pink);
-}
 
-#mc_embed_signup .button:hover,
-#mc_embed_signup .button:focus {
-    background-color: var(--deeppink);
+
+
+
+#mc_embed_signup .mc-field-group { padding-bottom: 0; }
+#mc_embed_signup label { color: rgba(243,236,224,0.6); font-size: 0.75rem; letter-spacing: 0.05em; }
+#mc_embed_signup input[type=email] {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.7rem 0.85rem;
+    background: rgba(243,236,224,0.06);
+    border: 1px solid rgba(243,236,224,0.2);
+    border-radius: 3px;
+    color: var(--cream-00);
+    font-family: inherit;
+    font-size: 0.95rem;
 }
+#mc_embed_signup input[type=email]::placeholder { color: rgba(243,236,224,0.35); }
+#mc_embed_signup input[type=email]:focus { outline: none; border-color: var(--ochre); }
+#mc_embed_signup .button {
+    --size: 2.75rem;
+    margin-top: 0.85rem;
+    background: var(--rust-01);
+    color: var(--cream-00);
+    border: none;
+    border-radius: 3px;
+    padding: 0.25rem 1.4rem;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    transition: background 200ms ease, transform 120ms ease;
+}
+#mc_embed_signup .button:hover { background: var(--rust-02); }
+#mc_embed_signup .button:active { transform: translateY(1px); }
+#mc_embed_signup .brandingLogo { display: none; }

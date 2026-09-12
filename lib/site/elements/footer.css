@@ -1,19 +1,18 @@
 footer {
     padding-top: calc(1 * var(--y-gap));
-    padding-bottom: calc(2 * var(--y-gap));
+    padding-bottom: 1.05rem;
     color: white;
     background-color: black;
 }
-
+/*
 footer > small {
     position: absolute;
     right: calc(0.5 * var(--x-gap));
     bottom: calc(0.5 * var(--x-gap));
 }
-
+*/
 @media (min-width: 64em) {
     footer {
         padding-top: calc(2 * var(--y-gap));
-        padding-bottom: calc(3 * var(--y-gap));
     }
 }

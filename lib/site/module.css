@@ -13,7 +13,6 @@
 /*@import '../bolt/elements/fullscreen.css';*/
 
 @import "../bolt/classes/button.css";
-@import "../bolt/classes/list.css";
 @import "../bolt/classes/menu.css";
 @import "../bolt/classes/thumb.css";
 @import "../bolt/classes/block.css";
@@ -23,7 +22,9 @@
 @import "../bolt/classes/device.css";
 
 @import './classes/cta.css';
+@import './classes/banner.css';
 @import './classes/card.css';
+@import './classes/list.css';
 @import './classes/more.css';
 @import './classes/thumb.css';
 @import './classes/post.css';
