@@ -1,30 +1,67 @@
 
-/*
-CMYK
-15 86 0 0
-*/
-
+@import "https://cdn.jsdelivr.net/gh/stephband/bolt-2@1.0.9/classes/color.css";
 
 :root         { --lightgrey: #7c858a; }
 .lightgrey-fg { color: #7c858a; stroke: #7c858a; }
 .lightgrey-bg { background-color: #7c858a; fill: #7c858a; }
 
-:root      { --grey: #3f4548; }
-.grey-fg   { color: #3f4548; stroke: #3f4548; }
-.grey-bg   { background-color: #3f4548; fill: #3f4548; }
+:root        { --grey: #3f4548; }
+.grey-fg     { color: #3f4548; stroke: #3f4548; }
+.grey-bg     { background-color: #3f4548; fill: #3f4548; }
 
-:root      { --blue: #46789a; }
-.blue-fg   { color: #46789a; stroke: #46789a; }
-.blue-bg   { background-color: #46789a; fill: #46789a;  }
+:root        { --blue: #46789a; }
+.blue-fg     { color: #46789a; stroke: #46789a; }
+.blue-bg     { background-color: #46789a; fill: #46789a;  }
 
-:root      { --navy: #005177; }
-.navy-fg   { color: #005177; stroke: #005177; }
-.navy-bg   { background-color: #005177; fill: #005177; }
+:root        { --navy: #005177; }
+.navy-fg     { color: #005177; stroke: #005177; }
+.navy-bg     { background-color: #005177; fill: #005177; }
 
-:root      { --pink: #fb12cc; }
-.pink-fg   { color: #fb12cc; stroke: #fb12cc; }
-.pink-bg   { background-color: #fb12cc; fill: #fb12cc; }
+:root        { --pink: #fb12cc; }
+.pink-fg     { color: #fb12cc; stroke: #fb12cc; }
+.pink-bg     { background-color: #fb12cc; fill: #fb12cc; }
 
 :root        { --deeppink: #c4009c; }
 .deeppink-fg { color: #c4009c; stroke: #c4009c; }
 .deeppink-bg { background-color: #c4009c; fill: #c4009c; }
+
+:root        { --cream-00: #f7f3ec; }
+.cream-00-fg { color: var(--cream-00); stroke: var(--cream-00); }
+.cream-00-bg { background-color: var(--cream-00); fill: var(--cream-00); }
+
+:root        { --cream-01: #EAE0CF; }
+.cream-01-fg { color: var(--cream-01); stroke: var(--cream-01); }
+.cream-01-bg { background-color: var(--cream-01); fill: var(--cream-01); }
+
+:root        { --cream-02: #D9CDBA; }
+.cream-02-fg { color: var(--cream-02); stroke: var(--cream-02); }
+.cream-02-bg { background-color: var(--cream-02); fill: var(--cream-02); }
+
+:root        { --cream-06: #6b6153; }
+.cream-06-fg { color: var(--cream-06); stroke: var(--cream-06); }
+.cream-06-bg { background-color: var(--cream-06); fill: var(--cream-06); }
+
+:root        { --cream-08: #211B15; }
+.cream-08-fg { color: var(--cream-08); stroke: var(--cream-08); }
+.cream-08-bg { background-color: var(--cream-08); fill: var(--cream-08); }
+
+:root        { --rust-01: #A83A2B; }
+.rust-01-fg  { color: var(--rust-01); stroke: var(--rust-01); }
+.rust-01-bg  { background-color: var(--rust-01); fill: var(--rust-01); }
+
+:root        { --rust-02: #8A2E21; }
+.rust-02-fg  { color: var(--rust-02); stroke: var(--rust-02); }
+.rust-02-bg  { background-color: var(--rust-02); fill: var(--rust-02); }
+
+:root        { --ink: #22201C; }
+.ink-fg      { color: var(--ink); stroke: var(--ink); }
+.ink-bg      { background-color: var(--ink); fill: var(--ink); }
+
+:root        { --ochre: #B98A2E; }
+.ochre-fg    { color: var(--ochre); stroke: var(--ochre); }
+.ochre-bg    { background-color: var(--ochre); fill: var(--ochre); }
+
+:root        { --teal: #2E5D57; }
+.teal-fg     { color: var(--teal); stroke: var(--teal); }
+.teal-bg     { background-color: var(--teal); fill: var(--teal); }
+

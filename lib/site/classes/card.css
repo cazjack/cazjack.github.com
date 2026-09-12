@@ -19,9 +19,14 @@ svg.inline-block {
 
 /* .project-card */
 
-.project-card > img {
+.project-thumb > img {
     aspect-ratio: 16 / 9;
 }
+
+.project-card > .project-thumb + .text-04 {
+    margin-top: 0.7em;
+}
+
 
 /* .avatar-card */
 

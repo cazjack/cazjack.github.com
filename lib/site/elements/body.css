@@ -21,11 +21,11 @@ body > hr {
 body > hr + section {
     margin-top: var(--y-gap);
 }
-
+/*
 body > .grid + .grid {
     margin-top: var(--y-gap);
 }
-
+*/
 body > .grid + .more-section,
 body > .grid + nav + .grid {
     margin-top: calc(2 * var(--y-gap));

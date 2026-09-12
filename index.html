@@ -39,25 +39,10 @@
          the direction is approved.
     ============================================================ -->
     <style>
-    :root {
-        --paper:    #F3ECE0;  /* warm ivory ground        */
-        --paper-2:  #EAE0CF;  /* slightly deeper band     */
-        --ink:      #22201C;  /* warm near-black text     */
-        --stone:    #6B6154;  /* muted secondary text     */
-        --rust:     #A83A2B;  /* oxblood — primary accent */
-        --rust-dk:  #8A2E21;
-        --ochre:    #B98A2E;  /* gilt — secondary         */
-        --teal:     #2E5D57;  /* wall green — secondary   */
-        --rule:     #D9CDBA;  /* hairlines                */
-        --umber:    #211B15;  /* footer ground            */
-
-        --measure:  34em;     /* ~62ch reading width      */
-    }
-
-    html { scroll-behavior: smooth; background: var(--paper); overflow-x: hidden; }
+    html { scroll-behavior: smooth; background: var(--cream-00); overflow-x: hidden; }
 
     body.index-body {
-        background: var(--paper);
+        background: var(--cream-00);
         color: var(--ink);
         font-family: 'Hanken Grotesk', system-ui, sans-serif;
         overflow-x: hidden;
@@ -75,15 +60,7 @@
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
     }
 
-    /* ---- Type ---------------------------------------------------- */
-    /* Override the module.css Helvetica stack */
-    .text-00, .text-01, h1, .text-02, h2, .text-03, h3,
-    .text-04, h4, .text-05, h5, .text-06, h6,
-    .text-08, body, .text-09, .text-10, .text-11, .text-12 {
-        font-family: 'Hanken Grotesk', system-ui, sans-serif;
-    }
-
-    .display, h1, h2, .quote p:first-child {
+    h1, h2, .quote p:first-child {
         font-family: 'Fraunces', Georgia, serif;
         font-optical-sizing: auto;
         font-weight: 400;
@@ -93,27 +70,16 @@
 
     p, li { text-wrap: pretty; }
 
-    .measure { max-width: var(--measure); }
-
     .lead {
         font-family: 'Fraunces', Georgia, serif;
         font-optical-sizing: auto;
         font-weight: 400;
-        font-size: clamp(1.35rem, 0.9rem + 1.4vw, 1.9rem);
+        font-size: clamp(1.35rem, 0.9rem + 1.4vw, 1.9rem) !important;
         line-height: 1.4;
         letter-spacing: -0.01em;
         color: var(--ink);
         max-width: 24em;
     }
-
-    p.body, .prose p {
-        font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.1875rem);
-        line-height: 1.65;
-        color: var(--ink);
-        max-width: var(--measure);
-    }
-    .prose p + p { margin-top: 1.1em; }
-    .prose p em { font-style: italic; }
 
     /* Mono kicker / eyebrow labels */
     .kicker {
@@ -122,14 +88,13 @@
         font-weight: 500;
         letter-spacing: 0.14em;
         text-transform: uppercase;
-        color: var(--rust);
+        color: var(--rust-01);
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
         gap: 0.35em 0.75em;
         margin: 0;
     }
-    .kicker .num { color: var(--stone); }
 
     /* ---- Top nav ------------------------------------------------- */
     body header {
@@ -143,7 +108,7 @@
         justify-content: space-between;
         gap: 1.5rem;
         padding-bottom: 1.25rem;
-        border-bottom: 1px solid var(--rule);
+        border-bottom: 1px solid var(--cream-02);
     }
     .brand {
         font-family: 'Fraunces', Georgia, serif;
@@ -153,52 +118,24 @@
         color: var(--ink);
         text-decoration: none;
     }
-    .brand span { color: var(--rust); }
+    .brand span { color: var(--rust-01); }
     .topnav { display: flex; gap: 1.75rem; list-style: none; margin: 0; padding: 0; }
+    .topnav li::marker, .social-icons li::marker { content: ''; }
     .topnav a {
         font-family: 'IBM Plex Mono', ui-monospace, monospace;
         font-size: 0.8rem;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: var(--stone);
+        color: var(--cream-06);
         text-decoration: none;
         padding-bottom: 2px;
         border-bottom: 1.5px solid transparent;
         transition: color 200ms ease, border-color 200ms ease;
     }
     .topnav a:hover { color: var(--ink); border-color: var(--ink); }
-    .topnav a.current { color: var(--ink); border-color: var(--rust); }
+    .topnav a.current { color: var(--ink); border-color: var(--rust-01); }
 
-    /* ---- Hero ---------------------------------------------------- */
-    .hero { padding: clamp(3.5rem, 8vw, 8rem) 0 clamp(2.5rem, 5vw, 4.5rem); }
-    .hero h1 {
-        font-size: clamp(2.6rem, 1.2rem + 5vw, 5.75rem);
-        line-height: 1.02;
-        font-weight: 400;
-        letter-spacing: -0.025em;
-        margin: 0.35em 0 0;
-        max-width: 15ch;
-    }
-    .hero h1 em { font-style: italic; color: var(--rust); }
 
-    .cta {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5em;
-        margin-top: 1.75rem;
-        font-family: 'IBM Plex Mono', ui-monospace, monospace;
-        font-size: 0.85rem;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: var(--ink);
-        text-decoration: none;
-        border-bottom: 1.5px solid var(--rust);
-        padding-bottom: 3px;
-        transition: gap 200ms ease, color 200ms ease;
-    }
-    .cta .arrow { color: var(--rust); transition: transform 200ms ease; }
-    .cta:hover { color: var(--rust); }
-    .cta:hover .arrow { transform: translateX(4px); }
 
     /* ---- Full-bleed image band ----------------------------------- */
     .band {
@@ -210,86 +147,17 @@
         aspect-ratio: 2560 / 732;
         max-height: 60vh;
         overflow: hidden;
-        background: var(--umber);
+        background: var(--cream-08);
     }
     .band img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .band { opacity: 0; transition: opacity 900ms ease; }
     .band.in { opacity: 1; }
 
-    /* Two-column segment split (component-level grid, not Bolt's) */
-    .segment .inner { display: grid; grid-template-columns: 1fr; row-gap: 2rem; }
-    @media (min-width: 768px) {
-        .segment .inner {
-            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-            column-gap: clamp(2rem, 4vw, 4.5rem);
-            align-items: start;
-        }
-    }
-
-    /* ---- Reflective intro --------------------------------------- */
     section { position: relative; }
     .section-pad { padding: clamp(2.5rem, 6vw, 5rem) 0; }
 
-    .noticing .lead { color: var(--rust); }
-
-    /* ---- "What brings you here" segments ------------------------- */
-    .brings h2 {
-        font-size: clamp(2rem, 1.2rem + 2.5vw, 3.25rem);
-        line-height: 1.05;
-        font-weight: 400;
-        letter-spacing: -0.02em;
-        margin: 0;
-    }
-    .brings > .intro { margin-top: 1rem; }
-
-    .segment { padding: clamp(2.5rem, 5vw, 4rem) 0; border-top: 1px solid var(--rule); }
-    .segment .q {
-        font-family: 'Fraunces', Georgia, serif;
-        font-optical-sizing: auto;
-        font-style: italic;
-        font-weight: 400;
-        font-size: clamp(1.9rem, 1.2rem + 2.2vw, 3rem);
-        line-height: 1.1;
-        letter-spacing: -0.015em;
-        color: var(--ink);
-        margin: 0.6rem 0 0;
-        max-width: 16ch;
-    }
-
-    /* Pull-quote */
-    .quote { margin: 0; }
-    .quote p:first-child {
-        font-style: italic;
-        font-weight: 400;
-        font-size: clamp(1.2rem, 0.95rem + 0.9vw, 1.6rem);
-        line-height: 1.35;
-        color: var(--ink);
-        margin: 0;
-        text-indent: -0.4em;
-    }
-    .quote .cite {
-        display: block;
-        margin-top: 1rem;
-        font-family: 'IBM Plex Mono', ui-monospace, monospace;
-        font-style: normal;
-        font-size: 0.75rem;
-        letter-spacing: 0.05em;
-        line-height: 1.5;
-        color: var(--stone);
-        text-transform: none;
-    }
-    .quote .cite b { color: var(--ink); font-weight: 500; }
-    .quote::before {
-        content: '';
-        display: block;
-        width: 2.5rem;
-        height: 2px;
-        background: var(--rust);
-        margin-bottom: 1.25rem;
-    }
-
     /* ---- Closing prompt ----------------------------------------- */
-    .closing { background: var(--paper-2); }
+    .closing { background: var(--cream-01); }
     .closing .prompts {
         list-style: none;
         margin: 1.75rem 0 0;
@@ -302,7 +170,7 @@
         line-height: 1.3;
         color: var(--ink);
         padding: 0.9rem 0;
-        border-bottom: 1px solid var(--rule);
+        border-bottom: 1px solid var(--cream-02);
         display: flex;
         gap: 0.9em;
     }
@@ -311,16 +179,15 @@
         counter-increment: prompt;
         font-family: 'IBM Plex Mono', ui-monospace, monospace;
         font-size: 0.8rem;
-        color: var(--rust);
+        color: var(--rust-01);
         padding-top: 0.5em;
     }
     .closing .prompts { counter-reset: prompt; }
 
     /* ---- Footer -------------------------------------------------- */
     body footer {
-        background: var(--umber);
-        color: var(--paper);
-        margin-top: clamp(3rem, 6vw, 5rem);
+        background: var(--cream-08);
+        color: var(--cream-00);
         padding: clamp(3rem, 6vw, 5rem) 0 2rem;
     }
     body footer h2 {
@@ -332,11 +199,8 @@
         color: var(--ochre);
         margin: 0 0 1rem;
     }
-    body footer a { color: var(--paper); text-decoration: none; border-bottom: 1px solid rgba(243,236,224,0.25); transition: border-color 200ms ease; }
-    body footer a:hover { border-color: var(--ochre); }
     body footer p { font-size: 0.95rem; line-height: 1.6; margin: 0.2rem 0; }
     body footer small, body footer .text-11 { color: rgba(243,236,224,0.5); }
-    body footer small a { color: rgba(243,236,224,0.6); }
 
     /* Mailchimp, de-clownified */
     #mc_embed_signup { background: none; font-family: inherit; width: 100%; }
@@ -349,7 +213,7 @@
         background: rgba(243,236,224,0.06);
         border: 1px solid rgba(243,236,224,0.2);
         border-radius: 3px;
-        color: var(--paper);
+        color: var(--cream-00);
         font-family: inherit;
         font-size: 0.95rem;
     }
@@ -357,8 +221,8 @@
     #mc_embed_signup input[type=email]:focus { outline: none; border-color: var(--ochre); }
     #mc_embed_signup .button {
         margin-top: 0.85rem;
-        background: var(--rust);
-        color: var(--paper);
+        background: var(--rust-01);
+        color: var(--cream-00);
         border: none;
         border-radius: 3px;
         padding: 0.7rem 1.4rem;
@@ -370,9 +234,75 @@
         height: auto;
         transition: background 200ms ease, transform 120ms ease;
     }
-    #mc_embed_signup .button:hover { background: var(--rust-dk); }
+    #mc_embed_signup .button:hover { background: var(--rust-02); }
     #mc_embed_signup .button:active { transform: translateY(1px); }
     #mc_embed_signup .brandingLogo { display: none; }
+
+    /* Footer links — raise specificity above module.css a:not([class]) pink */
+    .index-body footer a {
+        color: var(--cream-00);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(243,236,224,0.25);
+        transition: color 200ms ease, border-color 200ms ease;
+    }
+    .index-body footer a:hover { color: var(--ochre); border-color: var(--ochre); }
+    .index-body footer small a { color: rgba(243,236,224,0.55); border-bottom: none; }
+    .index-body footer small a:hover { color: var(--ochre); }
+
+    /* Social icon buttons */
+    .social-icons { display: flex; gap: 0.6rem; margin-top: 1.1rem; list-style: none; padding: 0; }
+    .index-body footer .social-icons a {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 2.5rem; height: 2.5rem; border-radius: 50%;
+        border: 1px solid rgba(243,236,224,0.28);
+        color: rgba(243,236,224,0.72);
+        transition: color 200ms ease, border-color 200ms ease, background 200ms ease;
+    }
+    .index-body footer .social-icons a:hover {
+        color: var(--cream-08); background: var(--ochre); border-color: var(--ochre);
+    }
+    .social-icons svg { width: 1.15rem; height: 1.15rem; fill: currentColor; display: block; }
+
+    /* ---- Selected projects ---- */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2.5rem);
+        margin-top: 2rem;
+    }
+    @media (min-width: 768px) { .projects-grid { grid-template-columns: 1fr 1fr; } }
+
+    .project-card { display: block; text-decoration: none; color: var(--ink); }
+    .project-thumb {
+        overflow: hidden;
+        aspect-ratio: 16 / 10;
+        background: var(--cream-01);
+    }
+    .project-thumb img {
+        width: 100%; height: 100%; object-fit: cover; display: block;
+        filter: saturate(0.96);
+        transition: transform 600ms cubic-bezier(0.2, 0.6, 0.2, 1);
+    }
+    .project-card:hover .project-thumb img { transform: scale(1.04); }
+    .project-title {
+        font-family: 'Fraunces', Georgia, serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: clamp(1.2rem, 1rem + 0.5vw, 1.5rem);
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        margin: 1rem 0 0;
+        transition: color 200ms ease;
+    }
+    .project-card:hover .project-title { color: var(--rust-01); }
+    .project-role {
+        margin: 0.45rem 0 0;
+        font-family: 'IBM Plex Mono', ui-monospace, monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--cream-06);
+    }
 
     /* ---- Motion: staggered reveal ------------------------------- */
     .reveal { opacity: 0; transform: translateY(18px); transition: opacity 700ms ease, transform 700ms ease; }
@@ -384,16 +314,16 @@
 
     /* Focus visibility */
     a:focus-visible, input:focus-visible, button:focus-visible {
-        outline: 2px solid var(--rust);
+        outline: 2px solid var(--rust-01);
         outline-offset: 3px;
     }
     </style>
 </head>
 
 <body class="index-body">
-    <header class="8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
+    <header class="8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid" style="--y-gap: 1.4rem;">
         <div class="topbar 8x x1 @s-12x @m-x2 @m-13x @l-x3 @l-14x">
-            <a class="brand" href="./index">Caroline&nbsp;Jackman<span>.</span></a>
+            <a class="brand" href="./index">Creative&nbsp;Business&nbsp;Growth</a>
             <ul class="topnav">
                 <li><a class="current" href="./index">Home</a></li>
                 <li><a href="./projects">Projects</a></li>
@@ -401,116 +331,139 @@
                 <li><a href="./about">About</a></li>
             </ul>
         </div>
+        <p class="text-11 rust-01-fg 8x x1 @s-12x @m-x2 @m-13x @l-x3 @l-14x">Coaching · Facilitation · Learning · Curation</p>
     </header>
 
-    <!-- HERO -->
-    <section class="hero 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
-        <div class="8x x1 @s-12x @m-x2 @m-13x @l-x3 @l-14x reveal">
-            <p class="kicker"><span class="num">—</span> Coaching · Facilitation · Learning · Curation</p>
-            <h1>What one thing has <em>made you smile</em> today?</h1>
-            <p class="lead">Noticing matters.</p>
-            <a class="cta" href="mailto:caroline@creativebusinessgrowth.co.uk">Start a conversation <span class="arrow">→</span></a>
-        </div>
-    </section>
+    <div class="section-pad 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
+        <h1 class="text-00 8x x1 @s-12x @m-x2 @m-10x @l-x3 reveal">What one thing has <em class="rust-01-fg">made you smile</em> today?</h1>
+    </div>
 
-    <!-- IMAGE BAND -->
     <div class="band">
         <img src="./images/header.jpg" alt="Caroline Jackman speaking at the Goldsmiths' Hall, ceramics on display behind her" />
     </div>
 
     <!-- NOTICING / WHO AM I -->
-    <section class="noticing section-pad 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
-        <div class="prose 8x x1 @s-9x @s-x2 @m-8x @m-x3 @l-8x @l-x4 reveal">
-            <p class="lead">Taking the time to notice ourselves, each other and what&rsquo;s happening around us can change the way we think.</p>
-            <p class="body">My starting point when working with you is listening with curiosity.</p>
-            <p class="body">I am an independent practitioner working with individuals and organisations across the creative and cultural sectors. I create purposeful spaces where people can think well, and think well together.</p>
-            <p class="body">I bring nearly 30 years of experience across creative practice, curation, coaching, facilitation, learning design and organisational development. That breadth lets me notice connections and subtleties, listen from different perspectives, and shape an approach around the people, purpose and context.</p>
-            <p class="body">My work is grounded in curiosity, openness and generosity.</p>
+    <section class="section-pad 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
+        <h2 class="text-02 8x x1 @s-9x @s-x2 @m-8x @m-x3 @l-8x @l-x4 reveal">Noticing matters.</h2>
+        <div class="8x x1 @s-9x @s-x2 @m-8x @m-x3 @l-8x @l-x4 reveal">
+            <p>Taking the time to notice ourselves, each other and what&rsquo;s happening around us can change the way we think.</p>
+            <p>My starting point when working with you is <strong class="rust-01-fg">listening</strong> with <strong class="rust-01-fg">curiosity</strong>.</p>
+            <p>I am an independent practitioner working with individuals and organisations across the creative and cultural sectors. I create purposeful spaces where people can think well, and think well together.</p>
+            <p>I bring nearly 30 years of experience across creative practice, curation, coaching, facilitation, learning design and organisational development. That breadth lets me notice connections and subtleties, listen from different perspectives, and shape an approach around the people, purpose and context.</p>
+            <p>My work is grounded in <strong class="rust-01-fg">curiosity</strong>, <strong class="rust-01-fg">openness</strong> and <strong class="rust-01-fg">generosity</strong>.</p>
+            <a class="cta" href="mailto:caroline@creativebusinessgrowth.co.uk">Start a conversation <span class="arrow">→</span></a>
         </div>
     </section>
 
     <!-- WHAT BRINGS YOU HERE -->
     <section class="brings section-pad 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
-        <div class="8x x1 @s-12x @m-x3 @m-11x @l-x4 @l-12x reveal">
-            <p class="kicker"><span class="num">00</span> What brings you here?</p>
-            <h2>We can start with where you are, what you&rsquo;re noticing and what you&rsquo;re trying to achieve.</h2>
+        <h2 class="text-02 8x x1 @s-9x @m-12x @m-x3 @l-12x @l-x4 reveal">What brings you here?</h2>
+        <div class="8x x1 @s-9x @m-8x @m-x3 @l-8x @l-x4 reveal">
+            <p>Let&rsquo;s start where you are, what you&rsquo;re noticing and what you&rsquo;re trying to achieve.</p>
         </div>
 
-        <!-- 01 -->
-        <div class="segment 8x x1 @s-12x @m-x3 @m-11x @l-x4 @l-12x reveal">
-            <div class="inner">
-                <div>
-                    <p class="kicker"><span class="num">01</span> One-to-one coaching</p>
-                    <p class="q">&lsquo;I need space to think&rsquo;</p>
-                    <p class="body">Coaching and reflective thinking centre on a trusted space where you can explore what&rsquo;s on your mind, hear your own thinking, question assumptions and recognise the knowledge and capability you already hold.</p>
-                    <a class="cta" href="mailto:caroline@creativebusinessgrowth.co.uk">Explore coaching <span class="arrow">→</span></a>
-                </div>
-                <blockquote class="quote">
-                    <p>I&rsquo;ve often relied on other people to tell me the answers. Working with Caroline, I realised that isn&rsquo;t the point &mdash; rather than being given the answers, I was supported to find my own. That has made my decisions far more meaningful and lasting, because they&rsquo;re grounded in my own thinking.</p>
-                    <span class="cite"><b>Katherine James</b><br>Jewellery and metal artist</span>
-                </blockquote>
-            </div>
+        <hr class="8x x1 @s-12x @m-x3 @m-11x @l-x4 reveal cream-02-bg" />
+
+        <div class="8x x1 @s-6x @m-x3 @m-5x @l-x4 reveal">
+            <p class="text-11 rust-01-fg">One-to-one coaching</p>
+            <p class="text-02 italic-text">&lsquo;I need space to think&rsquo;</p>
+            <p>Coaching and reflective thinking centre on a trusted space where you can explore what&rsquo;s on your mind, hear your own thinking, question assumptions and recognise the knowledge and capability you already hold.</p>
+            <a class="cta" href="mailto:caroline@creativebusinessgrowth.co.uk">Explore coaching <span class="arrow">→</span></a>
         </div>
 
-        <!-- 02 -->
-        <div class="segment 8x x1 @s-12x @m-x3 @m-11x @l-x4 @l-12x reveal">
-            <div class="inner">
-                <div>
-                    <p class="kicker"><span class="num">02</span> Facilitation</p>
-                    <p class="q">&lsquo;We need to think well together&rsquo;</p>
-                    <p class="body">Purposeful facilitation for teams and organisations creates the conditions for people to listen, collaborate and recognise the knowledge around them. With clarity of purpose, thoughtful preparation and greater equity in the conversation, teams can explore difficult questions and find a way forward together.</p>
-                    <a class="cta" href="./projects">Explore facilitation <span class="arrow">→</span></a>
-                </div>
-                <blockquote class="quote">
-                    <p>I&rsquo;d describe it as the &ldquo;sports massage&rdquo; of workshops &mdash; a bit uncomfortable at first, then we dug deeper and really got to some tougher issues. I will definitely use the strategies.</p>
-                    <span class="cite"><b>Libby Daniels</b><br>Time to Think participant</span>
-                </blockquote>
-            </div>
+        <blockquote class="quote 7x x2 @s-5x @s-x8 @m-x9 @l-x10 reveal">
+            <p>
+            I&rsquo;ve often relied on other people to tell me the answers.
+            Working with Caroline, I realised that isn&rsquo;t the point &mdash; rather than being given the answers, I was supported to find my own.
+            <!--That has made my decisions far more meaningful and lasting, because they&rsquo;re grounded in my own thinking.-->
+            </p>
+            <span class="text-12"><b>Katherine James</b><br>Jewellery and metal artist</span>
+        </blockquote>
+
+
+        <hr class="8x x1 @s-12x @m-x3 @m-11x @l-x4 reveal cream-02-bg" />
+
+        <div class="8x x1 @s-6x @m-x3 @m-5x @l-x4 reveal">
+            <p class="text-11 rust-01-fg">Facilitation</p>
+            <p class="text-02 italic-text">&lsquo;We need to think well together&rsquo;</p>
+            <p>Purposeful facilitation for teams and organisations creates the conditions for people to listen, collaborate and recognise the knowledge around them. With clarity of purpose, thoughtful preparation and greater equity in the conversation, teams can explore difficult questions and find a way forward together.</p>
+            <a class="cta" href="./projects">Explore facilitation <span class="arrow">→</span></a>
         </div>
 
-        <!-- 03 -->
-        <div class="segment 8x x1 @s-12x @m-x3 @m-11x @l-x4 @l-12x reveal">
-            <div class="inner">
-                <div>
-                    <p class="kicker"><span class="num">03</span> Learning design</p>
-                    <p class="q">&lsquo;We want to create meaningful learning&rsquo;</p>
-                    <p class="body">Meaningful learning begins with people, purpose and context. By recognising what people already bring, what they need and what you&rsquo;re trying to achieve together, learning can be relevant, purposeful and able to evolve as those needs change.</p>
-                    <a class="cta" href="./projects">Explore learning design <span class="arrow">→</span></a>
-                </div>
-                <div class="quote">
-                    <p>I bring the structure, experience and breadth of perspective to help shape the right framework &mdash; while staying open to where the learning takes us. It also means creating an environment built on trust, where people feel at ease and do their best thinking.</p>
-                </div>
-            </div>
+        <blockquote class="quote 7x x2 @s-5x @s-x8 @m-x9 @l-x10 reveal">
+            <p>I&rsquo;d describe it as the &ldquo;sports massage&rdquo; of workshops &mdash; a bit uncomfortable at first, then we dug deeper and really got to <!--some--> tougher issues. I will definitely use the strategies.</p>
+            <span class="text-12"><b>Libby Daniels</b><br>Time to Think participant</span>
+        </blockquote>
+
+        <hr class="8x x1 @s-12x @m-x3 @m-11x @l-x4 reveal cream-02-bg" />
+
+        <div class="8x x1 @s-8x @m-x3 @m-8x @l-x4 reveal">
+            <p class="text-11 rust-01-fg">Learning design</p>
+            <p class="text-02 italic-text">&lsquo;We want to create meaningful learning&rsquo;</p>
+            <p>Meaningful learning begins with people, purpose and context. By recognising what people already bring, what they need and what you&rsquo;re trying to achieve together, learning can be relevant, purposeful and able to evolve as those needs change.</p>
+            <p>I bring the structure, experience and breadth of perspective to help shape the right framework &mdash; while staying open to where the learning takes us. It also means creating an environment built on trust, where people feel at ease and do their best thinking.</p>
+            <a class="cta" href="./projects">Explore learning design <span class="arrow">→</span></a>
         </div>
 
-        <!-- 04 -->
-        <div class="segment 8x x1 @s-12x @m-x3 @m-11x @l-x4 @l-12x reveal">
-            <div class="inner">
-                <div>
-                    <p class="kicker"><span class="num">04</span> Creative development &amp; curation</p>
-                    <p class="q">&lsquo;We have an idea we want to bring to life&rsquo;</p>
-                    <p class="body">Creative development and curation are about relationships: between an artist and their work, between individual works, between work and space, and between the artist and the people experiencing it. I approach it as a journey of exploration &mdash; noticing connections, asking questions, and considering how an idea can be communicated while letting the artist and the work keep their own voice.</p>
-                    <a class="cta" href="./projects">Explore creative projects <span class="arrow">→</span></a>
-                </div>
-                <blockquote class="quote">
-                    <p>There is such a rich variety here, and the work goes so well together.</p>
-                    <span class="cite"><b>Visitor</b><br>Ceramics Unbound, Affordable Art Fair</span>
-                </blockquote>
-            </div>
+
+        <hr class="8x x1 @s-12x @m-x3 @m-11x @l-x4 reveal cream-02-bg" />
+
+        <div class="8x x1 @s-6x @m-x3 @m-5x @l-x4 reveal">
+            <p class="text-11 rust-01-fg">Creative development &amp; curation</p>
+            <p class="text-02 italic-text">&lsquo;We have an idea we want to bring to life&rsquo;</p>
+            <p>Creative development and curation are about relationships: between an artist and their work, between individual works, between work and space, and between the artist and the people experiencing it. I approach it as a journey of exploration &mdash; noticing connections, asking questions, and considering how an idea can be communicated while letting the artist and the work keep their own voice.</p>
+            <a class="cta" href="./projects">Explore creative projects <span class="arrow">→</span></a>
+        </div>
+
+        <blockquote class="quote 7x x2 @s-5x @s-x8 @m-x9 @l-x10 reveal">
+            <p>There is such a rich variety here, and the work goes so well together!</p>
+            <span class="text-12"><b>Visitor</b><br>Ceramics Unbound, Affordable Art Fair</span>
+        </blockquote>
+    </section>
+
+    <section class="more-section 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid cream-01-bg">
+        <div class="8x x1 @m-x3 @l-x4">
+            <h2 class="text-11 rust-01-fg">Selected projects</h2>
+        </div>
+
+        <div class="2x-grid grid x1 8x @s-10x @m-x3 @m-11x @l-x4">
+            <a href="./projects/collect-art-fair" class="project-card card x1">
+                <div class="project-thumb"><img src="./images/collectfair.jpg" alt="Caroline with award winners at the Collect Open Art Fair"></div>
+                <p class="text-04">Collect Open Art Fair Business Consultant</p>
+                <p class="text-11 cream-06-fg">Coach and Selector</p>
+            </a>
+
+            <a href="./projects/craft-industry-research" class="project-card card x1 @s-x2">
+                <div class="project-thumb"><img src="./images/research.jpg" alt="Round-table discussion during craft sustainability research"></div>
+                <p class="text-04">Environmental, financial and social sustainability in craft businesses</p>
+                <p class="text-11 cream-06-fg">Researcher and project manager</p>
+            </a>
+
+            <a href="./projects/crafting-business" class="project-card card x1">
+                <div class="project-thumb"><img src="./images/team.jpg" alt="Participants on a craft enterprise training programme"></div>
+                <p class="text-04">European and UK Training Programmes for craft enterprises</p>
+                <p class="text-11 cream-06-fg">Producer, project manager, trainer and coach</p>
+            </a>
+
+            <a href="./projects/exporting" class="project-card card x1 @s-x2">
+                <div class="project-thumb"><img src="./images/export.jpg" alt="Visitors at an international craft trade fair"></div>
+                <p class="text-04">Toolkits and guides for craft business trade with Europe post Brexit</p>
+                <p class="text-11 cream-06-fg">Project manager, advisor and author</p>
+            </a>
         </div>
     </section>
 
     <!-- CLOSING PROMPT -->
     <section class="closing section-pad 8x-grid @s-12x-grid @m-15x-grid @l-18x-grid grid">
         <div class="8x x1 @s-9x @s-x2 @m-8x @m-x3 @l-8x @l-x4 reveal">
-            <p class="kicker"><span class="num">—</span> Not quite sure what you need yet?</p>
+            <p class="kicker">Not quite sure what you need yet?</p>
             <p class="lead">Perhaps start here.</p>
             <ol class="prompts">
                 <li>What is making you happy right now?</li>
                 <li>What one thing would you change?</li>
                 <li>What is getting in the way of that?</li>
             </ol>
-            <p class="body" style="margin-top:1.75rem;">You don&rsquo;t need to have the answer. A conversation can be the beginning.</p>
+            <p style="margin-top:1.75rem;">You don&rsquo;t need to have the answer. A conversation can be the beginning.</p>
             <a class="cta" href="mailto:caroline@creativebusinessgrowth.co.uk">Start a conversation <span class="arrow">→</span></a>
         </div>
     </section>
@@ -527,6 +480,14 @@
             <h2>Social</h2>
             <p><a href="https://www.linkedin.com/in/caroline-jackman/">linkedin.com/in/caroline-jackman</a></p>
             <p><a href="https://www.instagram.com/carolinejackmanartist/">instagram.com/carolinejackmanartist</a></p>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/caroline-jackman/" aria-label="Caroline Jackman on LinkedIn">
+                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
+                </a></li>
+                <li><a href="https://www.instagram.com/carolinejackmanartist/" aria-label="Caroline Jackman on Instagram">
+                    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 011.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772 4.915 4.915 0 01-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428A4.88 4.88 0 013.68 3.678 4.897 4.897 0 015.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 1.802c-2.67 0-2.986.01-4.04.058-.976.045-1.505.207-1.858.344-.466.182-.8.398-1.15.748-.35.35-.566.684-.748 1.15-.137.353-.3.882-.344 1.857-.048 1.055-.058 1.37-.058 4.041 0 2.67.01 2.986.058 4.04.045.976.207 1.505.344 1.858.182.466.399.8.748 1.15.35.35.684.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058 2.67 0 2.987-.01 4.04-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.684.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041 0-2.67-.01-2.986-.058-4.04-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.055-.048-1.37-.058-4.041-.058zm0 3.063a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 8.468a3.333 3.333 0 100-6.666 3.333 3.333 0 000 6.666zm6.538-8.671a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"></path></svg>
+                </a></li>
+            </ul>
         </div>
 
         <div class="8x x1 @s-x7 @s-6x @s-2y @s-y1 @m-x11 @m-4x @m-y1 @l-x12 @l-4x">

@@ -4,6 +4,7 @@
 @import '../bolt/elements/body.css';
 @import '../bolt/elements/type.css';
 @import '../bolt/elements/a.css';
+@import '../bolt/elements/br.css';
 /*@import '../bolt/elements/form.css';
 @import '../bolt/elements/input-range.css';*/
 @import '../bolt/elements/svg.css';
@@ -18,10 +19,10 @@
 @import "../bolt/classes/block.css";
 @import "../bolt/classes/striped-table.css";
 @import "../bolt/classes/active.css";
-@import "../bolt/classes/color.css";
 
 @import "../bolt/classes/device.css";
 
+@import './classes/cta.css';
 @import './classes/card.css';
 @import './classes/more.css';
 @import './classes/thumb.css';
@@ -29,6 +30,7 @@
 @import './classes/box.css';
 @import './classes/atoms.css';
 @import './classes/text.css';
+@import './classes/quote.css';
 @import './classes/float.css';
 @import './classes/color.css';
 @import './classes/linkedin.css';

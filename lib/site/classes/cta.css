@@ -1,0 +1,18 @@
+.cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1.75rem;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--rust-01);
+    padding-bottom: 3px;
+    transition: gap 200ms ease, color 200ms ease;
+}
+.cta .arrow { color: var(--rust-01); transition: transform 200ms ease; }
+.cta:hover { color: var(--rust-01); }
+.cta:hover .arrow { transform: translateX(4px); }

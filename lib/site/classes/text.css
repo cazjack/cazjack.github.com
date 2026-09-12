@@ -36,15 +36,39 @@ https://stephen.band/font-size/?breakpoints=360,1080&.text-xx=128,144&.text-00=6
 .text-10,
 .text-11,
 .text-12 {
-
-    font-family: Helvetica, Arial, sans-serif;
-    font-style: none;
+    font-style: normal;
     text-transform: none;
     margin: 0;
 
     /* Make fonts appear the same on both hires and lores screens */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.text-00,
+.text-01, h1,
+.text-02, h2,
+.text-03, h3,
+.text-04, h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+}
+
+.text-05, h5,
+.text-06, h6,
+.text-08, body,
+.text-09,
+.text-10 {
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
+}
+
+.text-11,
+.text-12 {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-style: normal;
 }
 
 blockquote {
@@ -68,19 +92,19 @@ blockquote,
 }
 */
 .text-xx        { font-size: calc(7.5rem + 2.22222222vw);        line-height: 1.05em;        font-weight: 600; }
-.text-00        { font-size: calc(3.75rem + 1.11111111vw);       line-height: 0.94em;        font-weight: 700; }
-.text-01, h1    { font-size: calc(2.5rem + 0.74074074vw);        line-height: 1.05em;        font-weight: 700; }
-.text-02, h2    { font-size: calc(1.875rem + 0.55555556vw);      line-height: 1.05em;        font-weight: 700; }
-.text-03, h3    { font-size: calc(1.5rem + 0.44444444vw);        line-height: 1.575em;       font-weight: 700; }
-.text-04, h4    { font-size: calc(1.25rem + 0.37037037vw);       line-height: 1.05em;        font-weight: 700; }
+.text-00        { font-size: calc(3.75rem + 1.11111111vw);       line-height: 0.94em;        font-weight: 400; }
+.text-01, h1    { font-size: calc(2.5rem + 0.74074074vw);        line-height: 1.05em;        font-weight: 400; }
+.text-02, h2    { /*font-size: clamp(1.9rem, 1.2rem + 2.2vw, 3rem); font-size: calc(1.875rem + 0.55555556vw); */ font-size: calc(1.9921875rem + 0.59027778vw);      line-height: 1.1em;         font-weight: 400; }
+.text-03, h3    { font-size: calc(1.5rem + 0.44444444vw);        line-height: 1.575em;       font-weight: 400; }
+.text-04, h4    { font-size: calc(1.25rem + 0.37037037vw);       line-height: 1.15em;        font-weight: 500; letter-spacing: -0.01em; }
 .text-05, h5    { font-size: calc(1.07142857rem + 0.31746032vw); line-height: 1.225em;       font-weight: 600; }
 .text-06, h6    { font-size: calc(0.9375rem + 0.27777778vw);     line-height: 1.4em;         font-weight: 600; text-wrap: pretty; }
 .text-07        { font-size: calc(1.07142857rem + 0.31746032vw); line-height: 1.225em;       font-weight: 400; }
-.text-08, body  { font-size: calc(0.9375rem + 0.27777778vw);     line-height: 1.4em;         font-weight: 400; }
+.text-08, body  { /* font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.1875rem); */ font-size: calc(0.9375rem + 0.27777778vw);     line-height: 1.65em;         font-weight: 400; }
 .text-09        { font-size: calc(0.83333333rem + 0.24691358vw); line-height: 1.4em;         font-weight: 400; }
 .text-10        { font-size: calc(0.75rem + 0.22222222vw);       line-height: 1.166666667em; font-weight: 400; }
-.text-11        { font-size: calc(0.68181818rem + 0.2020202vw);  line-height: 1.283333333em; font-weight: 400; }
-.text-12        { font-size: calc(0.625rem + 0.18518519vw);      line-height: 1.4em;         font-weight: 400; }
+.text-11        { font-size: 0.75rem; letter-spacing: 0.14em; /*font-size: calc(0.68181818rem + 0.2020202vw);*/  line-height: 1.4em; font-weight: 500; text-transform: uppercase; }
+.text-12        { font-size: 0.75rem; letter-spacing: 0.05em; /*font-size: calc(0.625rem + 0.18518519vw);    */  line-height: 1.5em; font-weight: 400; }
 
 blockquote { font-weight: 500; }
 
@@ -90,6 +114,12 @@ h1 > .tag-brace, .text-01 > .tag-brace {
     vertical-align: -0.04em;
 }
 
+.italic-text {
+    font-style: italic;
+}
+
+
+* + h2, * + .text-02         { margin-top: 0.375em; }
 * + h3, * + .text-03         { margin-top: 1.05em; }
 * + h4, * + .text-04         { margin-top: 2.8em; }
 h4 + h4, .text-04 + .text-04 { margin-top: 0.35em; }
@@ -104,6 +134,8 @@ h1 + p,        .text-01 + p,
 h1 + pre,      .text-01 + pre,
 h1 + ul,       .text-01 + ul,
 h1 + .text-08, .text-01 + .text-08 { margin-top: 2.1em; }
+
+.text-04 + .text-11 { margin-top: 1.4em; }
 
 pre + p, p + pre                   { margin-top: 1.4em; }
 blockquote + p, p + blockquote     { margin-top: 1.4em; }
@@ -122,3 +154,7 @@ p + .right         { margin-top: 1.05em; margin-bottom: 1.05em; }
 h3 + .block { margin-top: 1.05em; }
 
 p + table { margin-top: 2.1em; }
+
+* + hr {
+    margin-top: var(--y-gap);
+}
