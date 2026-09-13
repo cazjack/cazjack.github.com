@@ -78,6 +78,11 @@ header > .text-00 {
     padding: 0;
 }
 
+.topnav li {
+    white-space: nowrap;
+    word-spacing: -0.1875em;
+}
+
 .topnav li::marker, .social-icons li::marker { content: ''; }
 
 .topnav a {
