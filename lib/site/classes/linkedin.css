@@ -10,8 +10,8 @@
 .update-components-actor__container a:focus-visible,
 .update-components-actor__container a:hover *,
 .update-components-actor__container a:focus-visible * {
-    color: var(--pink);
-    fill: var(--pink);
+    color: var(--blue);
+    fill: var(--blue);
 }
 
 .flex-grow-1 {
@@ -202,8 +202,15 @@ li-icon>svg {
 .app-aware-link,
 [data-test-app-aware-link] {
     /* Hashtag */
-    color: var(--pink);
+    color: var(--blue);
     text-decoration: none;
+}
+
+.app-aware-link:hover,
+[data-test-app-aware-link]:hover,
+.app-aware-link:focus-visible,
+[data-test-app-aware-link]:focus-visible {
+    color: #449ece;
 }
 
 .visually-hidden {

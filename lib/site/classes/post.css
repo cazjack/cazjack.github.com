@@ -40,7 +40,7 @@
 
 .post-toggle {
     padding-top: 1.25lh;
-    border-top: 1px solid var(--lightgrey);
+    border-top: 1px solid var(--cream-02);
 }
 
 img + .post-toggle,
