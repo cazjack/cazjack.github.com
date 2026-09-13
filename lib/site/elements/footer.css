@@ -37,7 +37,8 @@ body footer h2 {
 body footer p { font-size: 0.95rem; line-height: 1.6; margin: 0.2rem 0; }
 
 
-footer a {
+footer a,
+footer a:not([class]) {
     color: var(--cream-00);
     text-decoration: none;
     border-bottom: 1px solid rgba(243,236,224,0.25);
