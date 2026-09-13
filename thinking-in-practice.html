@@ -31,9 +31,9 @@
         document.documentElement.className += ' js loading';
         window.addEventListener('load', () => {
             // Unreveal elements to be revealed on intersection
-            if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelectorAll('.reveal').forEach((target) => target.classList.add('unrevealed'));
-            }
+            //if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            //    document.querySelectorAll('.reveal').forEach((target) => target.classList.add('unrevealed'));
+            //}
             // Remove loading
             window.requestAnimationFrame(() => document.documentElement.classList.remove('loading'));
         });
