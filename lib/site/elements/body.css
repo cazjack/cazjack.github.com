@@ -1,4 +1,4 @@
-html {
+:root {
     scroll-behavior: smooth;
     background: var(--cream-00);
     overflow-x: hidden;
